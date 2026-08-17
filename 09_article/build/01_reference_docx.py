@@ -2,7 +2,8 @@ import sys
 from pathlib import Path
 import re
 import zipfile
-from urllib.request import urlopen
+
+import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
@@ -26,9 +27,19 @@ BLANK_PROPS = (
     "</cp:coreProperties>")
 
 
+AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+
+
 def fetch_template():
-    if not TEMPLATE.exists():
-        TEMPLATE.write_bytes(urlopen(SOURCE).read())
+    if TEMPLATE.exists():
+        return TEMPLATE
+    r = requests.get(SOURCE, headers={"User-Agent": AGENT}, timeout=60)
+    if r.status_code != 200 or not r.content.startswith(b"PK"):
+        raise SystemExit(
+            f"could not download the author template ({r.status_code}).\n"
+            f"Save it from {SOURCE}\nto {TEMPLATE} and run this again.")
+    TEMPLATE.write_bytes(r.content)
     return TEMPLATE
 
 ARIAL = ('<w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial" '
