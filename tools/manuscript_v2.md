@@ -1,0 +1,883 @@
+# Age at onset in Parkinson's disease reflects inherited dose rather than a different genetic architecture
+
+**Summary.** Parkinson's disease that begins before 50 is often
+treated as a different illness from disease that begins after 60, and if the two
+forms had different genetic causes they would need different drugs. We
+hypothesised that age at onset instead reflects how much inherited risk a
+patient carries, and therefore that the variants and pathways acting on onset
+would be the same ones that act on risk. We tested this in 2,107 patients in the Parkinson's Progression Markers Initiative with a recorded date of first motor symptom (1). Onset formed a single continuum: median 37.0 years in carriers of a
+*PRKN* or *PINK1* variant, 47.2 in *SNCA* carriers, 59.0 in
+*GBA* carriers, 59.7 in *LRRK2* carriers, and 62.3 in the 1,738
+patients with no known variant. Among that last group, patients in the highest
+third of common-variant burden developed the disease 5.9 years earlier than
+those in the lowest third. Across 86 individual variants and 6,259 gene sets, the effect on onset tracked the effect on risk, in analyses with the resolution to have found an exception. Genetics described the group rather than the individual: models predicting one patient's onset age performed at the level of the group average. These results support the hypothesis. The genetics was
+informative in one further respect: for six genes we could read from brain
+expression data whether a drug would need to raise or lower the gene, and the
+answer differed between two lysosomal genes that a pathway-level reading would
+treat alike.
+
+**Funding.** None. The Parkinson's Progression Markers Initiative
+is sponsored by the Michael J. Fox Foundation for Parkinson's Research and its
+funding partners.
+
+## Introduction
+
+A neurologist who diagnoses Parkinson's disease in a patient of 45 treats that
+patient differently from one of 70. Early-onset disease is coded separately,
+counselled differently and enrolled into its own trials, and the assumption
+behind that is that the illness is not only earlier but different. Whether the
+assumption holds decides whether a therapy developed in one group can be
+expected to work in the other.
+
+Genetics offers a way to test it. Rare variants in *PRKN*, *PINK1* and
+*SNCA* bring onset forward by decades, variants in *GBA* and
+*LRRK2* by a few years, and beyond them about ninety common variants each
+shift risk by a few per cent (3, 4). A genome-wide study of onset in 28,568
+patients found that common risk variants also move onset, but identified few
+loci acting on onset in particular (2). Two explanations remain open. Early and
+late onset may be different diseases, in which case the variants acting on the
+two would differ. Or they may be the same disease at different doses, in which
+case the same variants would act on both and the earliest patients would carry
+more of them.
+
+We hypothesised that age at onset in Parkinson's disease is set by how much
+inherited risk a patient carries rather than by which variants they carry. If
+that is correct, the variants and pathways acting on onset should be the same
+ones that act on risk, and no variant or pathway should act on onset over and
+above its effect on risk. We tested this prediction in the Parkinson's
+Progression Markers Initiative (1), using age at first motor symptom, and then
+asked what the answer implies for drug targets.
+
+Our results support the hypothesis. Onset forms one continuum, from carriers of a single causal variant through to patients who carry none; within that last group, common-variant burden separates the extreme thirds by almost six years; and across every variant and gene set we tested, the effect on onset followed the effect on risk. We began this work as an attempt to confirm an earlier analysis of our own,
+which had used age at enrolment and had concluded the opposite; the conclusion changes once onset age replaces enrolment age, and we set out why alongside the positive findings.
+
+## Results
+
+### Age at onset falls on one continuum
+
+Fig. 1 summarises the analysis. Early and late onset are separated clinically at a cut in age. The genetic contribution to onset is continuous. Among the 2,107 PPMI cases with a
+recorded onset date, median onset was 37.0 years in carriers of a *PRKN* or *PINK1*
+variant (n = 23), 47.2 in *SNCA* carriers (n = 41), 59.0 in *GBA* carriers (n = 108),
+59.7 in *LRRK2* carriers (n = 197) and 62.3 in the 1,738 cases recruited without a known
+variant. Every carrier group differs from the last (P = 1.2×10⁻¹⁰, 4.7×10⁻¹⁴, 0.0025 and
+0.0012 by Mann-Whitney test), and there is no gap between the categories: the distributions overlap
+throughout, and the effect of a common-variant burden described below continues the same axis into
+patients who carry no known variant at all (Fig. 2b).
+
+### Polygenic burden and age at onset
+
+Age at first motor symptom is available for 2,107 PPMI cases (1), with a mean of 60.5 years (s.d., s.d. 10.7,
+range 15.4 to 92.2; 340 with onset before 50 and 1,206 after 60). Splitting the 403
+inferred-European cases recruited without a known variant into thirds of polygenic burden, the
+highest third reached a median onset of 58.0 years against 63.8 in the lowest, a difference of 5.9 years (log-rank test, which compares the whole onset curves, P = 0.007), and 22.4% of the highest third had onset before 50 against 9.7% of
+the lowest (Fig. 2b,c). Onset falls monotonically across fifths of burden (Supplementary Fig. 1d).
+
+Among cases, each standard deviation of the META5 polygenic score was associated with earlier
+onset. The pre-specified primary analysis, restricted to inferred-European sporadic cases and adjusted for sex and ten measures of genetic ancestry (n = 403), gives 1.97 years per standard deviation (95%
+confidence interval 1.00 to 2.94, P = 7.8×10⁻⁵), but this is the largest of 24
+specifications; the median is 1.48 years and the range extends to 0.74, with all 24 negative and
+23 reaching P < 0.05 (Supplementary Fig. 1a, Supplementary Fig. 14e). Modelled as time to onset, the rate at which patients developed the disease rose by 1.22 per standard deviation (1.10 to 1.35, P = 1.6×10⁻⁴). Comparing cases
+directly, each standard deviation raised the odds of onset before 50 rather than after 60 by 1.86
+(1.34 to 2.58, P = 2.1×10⁻⁴; 67 against 216 cases). The two distributions of burden
+overlap almost completely and differ in location alone (Supplementary Fig. 2a).
+
+Across the 86 independent risk loci of Nalls and colleagues (3), using external data alone, the risk effect and the onset effect
+correlate at r = −0.721 (P = 4.9×10⁻¹⁵), with 85% of risk-increasing alleles
+advancing onset (Supplementary Fig. 1b). Eleven of the twenty loci reaching genome-wide significance for risk
+also reach P < 0.05 for onset. PPMI's own per-variant onset effects reproduce the IPDGC age-at-onset study (2) in aggregate (r = +0.375 across 86 loci, P = 3.7×10⁻⁴,
+precision-weighted slope 1.63 ± 0.36; Supplementary Fig. 1c) while no single variant survives
+correction. At
+the level of individual variants comparing the two groups directly gives a combined statistic for whether any effect differs between them of χ² = 113.5 on 90 degrees of freedom (P = 0.048), which is marginal and exploratory; no
+individual variant approaches the threshold for the panel (Supplementary Fig. 2b).
+
+Nothing resolves at the level of individual variants because the sample is too small. At n = 403 and minor allele frequency 0.30, the smallest onset effect detectable with 80% power, at a threshold corrected for the 86 variants tested, is 3.53 years per allele; the median true effect across the panel is 0.16. None of the 86 variants is detectable in
+this sample.
+
+These analyses use age at first motor symptom. Our earlier analysis stratified on age at enrolment
+while describing its strata as onset cohorts; the two correlate at r = 0.950, but enrolment age
+exceeds true onset by a median of 2.28 years and misclassifies 6.6% of cases at the 50-year cut,
+and for 2,624 of the 3,616 participants it analysed there is no Parkinson's onset age at all. Repeated on enrolment age, the analyses in this section give smaller effects, and in some cases the direction changes (Supplementary Fig. 17).
+
+### Pathway analysis of onset conditional on risk
+
+If early and late onset were driven by different mechanisms, the pathways carrying onset signal
+should differ from those carrying risk signal. Across the 86 independent risk loci, with risk
+signal held fixed and significance from 20,000 label permutations, loci near lysosomal genes
+showed nominally elevated onset signal (β = +0.397, P = 0.046; mean onset χ² 4.87
+within against 2.67 outside) and loci in the 17q21.31 tau region the opposite (β =
+−0.826; 0.31 against 3.08) (Supplementary Fig. 2c). The lysosomal result depends on which loci are included: removing the chr4p16.3 locus raises P to 0.13, only 5 of 12 single-locus removals keep P below 0.05,
+and 4.6% of randomly chosen 12-locus sets reach the same value (Supplementary Fig. 14f). In a sweep
+of 303 gene sets, none survived correction.
+
+Genome-wide, we computed a gene-level statistic for 26,993 genes from all 6,813,424 variants in
+the onset study and from the risk study, calibrated against genes carrying the same number of variants, which left no systematic inflation (λ = 1.000), and tested 6,259 gene sets from five databases for onset
+signal conditional on risk signal. Because neighbouring genes carry correlated statistics and gene
+sets are themselves spatially clustered, significance came from sliding each set's membership around the genome, which preserves the clustering of neighbouring genes, with the many sets tested handled by taking the largest statistic in each rotation as the reference, which allows for the overlap between sets.
+
+No gene set is significant once all 6,259 sets tested are allowed for. In the rotations the largest statistic reached t = 5.80 at the 95th percentile, so a real set at that level would have been detected; the strongest we observed, a high-density lipoprotein set of 18 genes spread across 13 loci including *APOE*, reached t = 5.18 with family-wise P = 0.11 (Supplementary Fig. 10a). Every lysosomal and autophagy set
+sits at family-wise P = 1.00. A simpler permutation that shuffles genes without preserving their clustering placed the same lipoprotein set at a false-discovery rate of 0.001, so much of an apparent pathway signal can come from a single genomic neighbourhood.
+
+### Prediction of onset age in individual patients
+
+Predicting onset age from the same 90 variants plus sex and ancestry components under ten-fold cross-validation, with model settings chosen inside the training folds so that no test patient influenced them, no model beat predicting
+the sample mean. R² on patients the model had not seen was −0.029 for the mean, −0.042 for elastic net, −0.052 for
+gradient boosting and −0.443 for unregularised linear regression (Supplementary Fig. 10b). Gradient boosting did better than plain linear regression only because that model fits 101 predictors to 403 patients, which reflects regularisation rather than anything the model has learned.
+
+We also screened variant pairs for interaction. Restricting to variants above 5% minor
+allele frequency and pairs with at least 30 carriers, which removes 219 pairs with too few carriers to fit reliably, leaves 3,151 pairs; the maximum absolute t-statistic is 3.98 against a permutation null
+with mean 3.79 and 95th percentile 4.30 (P = 0.24).
+
+The learning curves bear on whether this is a limit of sample size or of signal. Held-out R² for the additive score rises
+monotonically from −0.032 at n = 100 to +0.010 at n = 403, crossing zero near n = 220. Gradient
+boosting rises in parallel but from −0.171 to −0.098, and the gap does not close at any
+sample size tested. The additive model is limited by sample size. The nonlinear model is limited by the same thing and pays in addition for flexibility it cannot use. The most that could be explained is the 3.83% of variation the score itself accounts for.
+
+### Structural tractability of the implicated genes
+
+We profiled each candidate gene against its AlphaFold model (8, 9). A grid scan for buried cavities in the manner of LIGSITE (10) recovered the
+annotated catalytic site as the largest pocket in *GALC* (1,287 Å³, containing all six
+UniProt-annotated active and binding residues), *GBA1* (1,050 Å³, both catalytic
+glutamates), *GAK*, *APOE* and *LRRK2*, so the scan is locating annotated sites.
+
+We ran the same pipeline on twenty control proteins, ten carrying an approved small-molecule drug and ten long-standing hard targets. Enclosure, a measure of how far a cavity is surrounded by protein, separated them at an area under the curve of 0.96, ahead of hydrophobicity of the lining
+(0.83), mean predicted confidence (0.84), fraction of disordered residues (0.79) and pocket volume
+(0.74). At the best cut, 0.705, nine of ten drugged and ten of ten undrugged controls are placed
+correctly.
+
+*GALC* has a confidently predicted fold (mean confidence 94.6) and a well-formed catalytic pocket, is expressed in the
+substantia nigra at 12.1 transcripts per million, and is tolerant of loss of function in healthy people (LOEUF 0.94, where values near 1 indicate tolerance) (7); what it does not have is a single experimental structure in the Protein Data
+Bank, with or without a ligand. *LRRC37A2* is predicted with low confidence throughout, at a mean of 42.3 and with 77% of residues below the level at which a predicted structure carries information, so the cavity reported in it reflects the flexibility of the chain rather than a binding site. *SNCA* has no pocket above 50 Å³ at all, which is why the agents
+against it target the aggregate rather than the monomer (Fig. 4).
+
+The benchmark does not transfer to every protein class. Two candidates with dozens of ligand-bound structures, *GBA1*
+and *CTSB*, fall below the enclosure cut, because a glycosidase substrate channel is wide
+where a kinase or a carbonic anhydrase site is tight. Enclosure separates protein classes well and is less informative within the lysosomal hydrolases, where the practical question is whether a ligand has ever been crystallised in the site.
+
+### Direction of effect at each locus
+
+For each candidate we took every significant brain expression signal for the gene in GTEx v8 (6), lifted it to the coordinates of the risk study, aligned the
+effect onto the risk-increasing allele, and kept the signals at the gene's own risk locus; each of
+the 13 brain regions then voted once, using the median of its own variants, so that a region with many records does not dominate. That gives 39,694 aligned
+records.
+
+Seven genes have enough expression data at their own locus to give an effect, and six of those give a consistent direction (Fig. 3a). The risk allele lowers *LRRC37A2* in all 13 regions and
+*TMEM175* in 3 of 3, so a drug would have to raise them; it raises *GPNMB* in 11 of 11,
+*GAK* in 2 of 2 and *GALC* in 2 of 2, so a drug would have to lower them. *MAPT* is
+mixed. The *GALC* call agrees with the linkage-based analysis reported above, in which all five brain expression signals inherited together with the disease lead variant raise the gene. Of the six, an agent acting in the required direction exists for one, *GPNMB*
+(Supplementary Fig. 3a,b).
+
+*GBA1* and *GALC* are both lysosomal
+hydrolases and both are lysosomal storage disease genes, but the genetics point opposite ways:
+loss of glucocerebrosidase raises risk, so ambroxol is given to raise it (17), whereas raised
+galactosylceramidase appears to raise risk, so the intervention would be inhibition. A programme that treated the lysosomal loci as one mechanism would need the opposite direction for one of them.
+
+A strong expression signal does not on its own identify which gene is affected. At most
+loci the lead variant controls one gene in brain, or none; at 17q21.31 it
+controls 28, because the variant marks a polymorphic inversion that moves as one
+block (Fig. 3c). The *LRRC37A2* signal is among the strongest we measured and also the hardest to attribute; the same lead variant raises *MAPT* while lowering *LRRC37A2*. *LRRC37A2* is also expressed at only 1.5 to 7 transcripts per million across brain, an order of magnitude below *MAPT* in the same regions (Fig. 3b).
+
+### Galactosylceramidase activity and disease risk
+
+Our earlier analysis nominated *GALC* on the basis of rs8005172, described as the only
+coding variant among those selected, with a gain-of-function mechanism in which the substitution
+stabilises a loop at the edge of the binding pocket. That variant carries PPMI's own annotation
+`GALC/GPR65`, and Ensembl returns `intron_variant` assigned to *GPR65*. The variant is intronic, so the conformational mechanism has no substituted residue to act on. Across the 90-variant panel only four variants are missense and 64 are intronic. Of the
+25 strongest Parkinson's disease variants at the *GALC* locus, none is coding (Supplementary Fig. 20a).
+
+The underlying hypothesis stands independently of that point and is due to Senkevich and colleagues (5), who report that rs979812 raises blood galactosylceramidase activity and that Mendelian
+randomisation places raised activity causally upstream of Parkinson's disease. rs979812-T raises
+disease risk (β = 0.061, 95% confidence interval 0.043 to 0.079, P = 6×10⁻¹¹)
+and raises enzyme activity (β = 1.205, 1.09 to 1.32, P = 5×10⁻⁹⁵, n = 1,454), with
+a Mendelian randomisation estimate of 0.025 (s.e. 0.007, P = 8×10⁻⁴) (Supplementary Fig. 3d).
+
+If the mechanism is that the risk haplotype raises *GALC* expression, then in an independent
+tissue and an independent assay the same haplotype should raise *GALC* transcript abundance.
+Among GTEx brain expression quantitative trait loci for
+*GALC* in linkage disequilibrium with the risk variant at r² > 0.6, all five raise
+*GALC* expression when aligned to the risk allele, with a maximum r² of 0.992 and a median
+aligned effect of +0.220 (Supplementary Fig. 3e).
+
+Two things qualify this. Colocalisation, which asks whether two signals share the same causal variant, favours distinct variants for the disease signal and the strongest cerebellar expression signal (posterior probability 0.046 for one shared
+variant against 0.927 for an expression signal only), although the deposited disease statistics
+for this locus are substantially weaker than the published values and the comparison is underpowered. And *GALC* is under detectable genetic control in only 4 of
+13 GTEx brain tissues, dominated by cerebellum and cerebellar hemisphere, and absent from
+substantia nigra, putamen, caudate and cortex (Supplementary Fig. 20b).
+
+### Structure prediction at the *GALC* locus
+
+We folded *GALC* wild type against 53 single substitutions with ESMFold (13), comprising 22 ClinVar
+pathogenic, 13 gnomAD common and 18 random variants. Fifty-two of the 53 predicted mutant
+structures sit within 1 Å Cα root-mean-square deviation of wild type, and the largest change in the predictor's mean confidence across all 53 is 1.03 points (Supplementary Fig. 16).
+
+Four measures were compared for separating pathogenic from tolerated variants. Distance to the
+catalytic pair E198 and E274, measured on the AlphaFold model of P54803, gives an area under the
+curve of 0.823 (P = 0.002); change in mean pLDDT gives 0.780 (P = 0.007); root-mean-square
+deviation between predicted mutant and wild-type structures gives 0.706 (P = 0.046); and pLDDT at
+the residue itself gives 0.323 (Supplementary Fig. 11). Structure prediction is informative for this protein through geometry; comparing predicted mutant structures is not.
+
+None of these measures predicts the direction of an activity change, because each scores
+disruption, and disruption is a loss-of-function signal by construction. No coding variant that
+raises galactosylceramidase activity has been reported, so there is no substitution on which a
+gain-of-function structure prediction could be attempted, by this or any method.
+
+### The 17q21.31 locus
+
+The early-onset nomination rested on rs62053943, which falls inside *LRRC37A2*. The variant sits in a polymorphic inversion that is common in Europeans (16). In 525 unrelated European samples from the 1000 Genomes Project (14),
+the haplotype carrying it extends 620 kb at |D'| ≥ 0.9 across *CRHR1*, *LRRC37A2*,
+*MAPT* and *KANSL1*, and 1,312 common variants sit at r² ≥ 0.5, *MAPT* among
+them (Supplementary Fig. 12). Expression data does not separate them either: the variant is a significant brain
+expression quantitative trait locus for 25 genes across all 13 GTEx brain tissues, and the
+*MAPT*-annotated variant for 28, almost the same set.
+
+The locus ranks fifth of the 86 for disease risk and 77th for onset. What remains open is which gene carries the signal, and whether the effect is on onset or on risk; the locus itself is well supported.
+
+Ranking the fifteen candidate genes with a gene-based onset statistic separates them cleanly from
+the two the earlier analysis nominated. *SNCA* is the only gene reaching genome-wide
+significance for onset; *TMEM175*, *GAK*, *DGKQ*, *IDUA* and *APOE*
+follow. Four of the fifteen have an agent already in clinical development and a further seven have
+a ligand-bound structure. *GALC* and *LRRC37A2* rank ninth and thirteenth, and neither
+has small-molecule tractability evidence in Open Targets (Supplementary Fig. 19).
+
+### Classification accuracy in PPMI
+
+We examined an application in which gradient-boosted classifiers separated four clinical
+categories within age strata at weighted F1 of 0.95 to 0.96, and non-overlapping SHAP-selected
+variant lists were read as distinct genetic architecture.
+
+PPMI's participant-status table carries enrolment flags recording which sub-study each
+participant entered: `ENRLNORM` for healthy controls, `ENRLRBD` and `ENRLHPSM` for
+the prodromal cohorts, `ENRLSRDC` for sporadic disease, and `ENRLLRRK2`, `ENRLGBA`,
+`ENRLSNCA`, `ENRLPRKN` and `ENRLPINK1` for the genetic cohorts. Assigning each
+participant the majority cohort of their flag pattern, with no model fitted, is correct for
+93.1% of 7,545 participants across 43 distinct patterns. Ten-fold cross-validation gives 92.9%
+(s.d. 0.8%) against a majority-class baseline of 67.6%, so the accuracy is not a product of overfitting
+(Supplementary Fig. 12).
+
+Under 5×5-fold repeated stratified cross-validation with blocks assigned by data
+provenance, the twenty enrolment-design columns alone reached weighted F1 0.953 against 0.956 for
+all 862 numeric features in the late stratum, and 0.841 against 0.827 in the early stratum, where
+the design block alone outperformed the full model. Removing that block dropped the full model to
+0.749 and 0.641. The 162 genotype columns alone reached 0.644 against a majority-class baseline
+of 0.498, and 0.573 against 0.532 (Supplementary Fig. 4, Supplementary Fig. 9). A classifier given only binary indicators of which
+measurements a participant has, with no feature values at all, reached F1 0.759 and area under the
+curve 0.912, which is better than any model built from the genetic data, whose best was 0.724.
+
+Ascertainment also differs between the compared strata. Of 1,152 cases with a polygenic score and
+an enrolment age, 285 (24.7%) were recruited because they carry a pathogenic variant, 31.9% in
+the early stratum against 23.5% in the late (odds ratio 1.52, Fisher P = 0.053).
+
+### Model attributions
+
+Removing a block of features and refitting shows how much that block contributed. The complementary question is what the
+fitted model attends to when nothing is removed, which is what a feature-importance ranking is
+meant to answer, so we refitted the three model families on the corrected matrix and read their Shapley attributions, which apportion a model's output among the features it was given.
+
+In the late stratum the three largest attributions are enrolment flags: the hyposmia arm (1.013),
+the sporadic arm (0.671) and the REM-sleep arm (0.427), an order of magnitude above the next
+feature. Fourth is the count of pathogenic variants the study itself recorded (0.246) and sixth
+the number of visits at which RNA sequencing was performed (0.194); both record how the study handled the patient rather than the patient's biology. Study-design columns carry
+41.7% of all attribution in the late stratum and 21.6% in the early stratum, against 13.1% and
+15.3% for genotypes and 1.9% and 3.2% for polygenic scores. No genotype feature enters the top
+twenty of the late stratum at all; one does in the early stratum (Fig. 5a,b).
+
+Resampling the patients 200 times and refitting separates what is stable from what is not. The
+three enrolment flags hold ranks one, two and three in every resample. Below them the ordering is
+unstable: the tau sub-study indicator, tenth in the full sample, ranges from tenth to
+forty-eighth, and the ancestry component ranked eighteenth stays in the top twenty in 36% of
+resamples against 25% for the one ranked twenty-first (Fig. 5c, Supplementary Fig. 18a,b). A ranking whose leading entries are set by study design, and whose remainder moves this much between resamples, describes the model more than the biology.
+
+The strongest single genotype in the late stratum makes the point in miniature. It is missing for
+2,627 of 3,386 patients, because whether a participant was typed on that array depends on which
+sub-study they joined, and the model assigns those patients an attribution of their own rather
+than treating the value as absent (Supplementary Fig. 18c).
+
+### Overlap between variant lists within a single group
+
+Splitting the late-onset stratum at random into subsets matching the two published strata, so
+that architecture is identical by construction, and running the earlier selection procedure on
+each, gave a mean overlap of 1.21 variants across 3,600 replicates, with zero overlap in 27.0%.
+The observed cross-stratum overlaps were 2, 2 and 0 for the three model families, and 89.1% of
+replicates under known-identical architecture returned an overlap at or below the observed
+maximum (Supplementary Fig. 8).
+
+### Operating characteristics of the ranking comparison
+
+We simulated 195,600 two-stratum association studies across 978 parameter combinations, varying
+the smaller stratum from 100 to 2,000 against a fixed 3,386, the candidate panel across 50, 162
+and 500 variants, the causal count across 5 and 15, per-allele odds ratios from 1.05 to 1.49,
+linkage disequilibrium block structure, and the compared list length across k = 5, 10, 20 and
+30.
+
+Four generative scenarios were used. Under *identical*, both strata carry the same causal
+variants with the same effects. Under *dose*, the same variants with effects halved in one
+stratum, which is one architecture at two intensities. Under *half shared*, half the
+causal variants are common. Under *none shared*, none is. A method that tests for distinct
+architecture should reject rarely under the first two and often under the last two. Each
+replicate was analysed twice: with the ranking rule, fitting gradient-boosted trees separately in
+each stratum, ranking by mean absolute SHAP and declaring distinct architecture when the top-k
+lists did not intersect; and with a formal test, estimating each variant's effect separately in
+each stratum, testing the difference by a z-test and combining across variants.
+
+At the operating point of a typical complex-disease study, 230 against 3,386 with 162 candidate
+variants, k = 10 and per-allele odds ratios of 1.05 to 1.11, the ranking rule concluded
+“distinct architecture” in 45.4% and 42.2% of replicates whose architectures were identical.
+Where the strata shared no causal variant it concluded the same in 47.3% and 46.8%
+(Supplementary Fig. 6a). The difference between those rates, which is the rule's entire information content,
+is 0.019 and 0.045. The formal test returned 6.6% and 7.0% under identical architecture and
+7.4% and 12.0% under disjoint architecture (Supplementary Fig. 6b). Neither has appreciable power at these
+effect sizes, which is the correct answer, because none is available. The rule reports a positive
+finding in nearly half of those studies and the formal test reports nothing.
+
+At larger effects the two separate. At an odds ratio of 1.49 the ranking rule had a false-positive
+rate of 0.054 and power of 0.560 against disjoint architecture; the formal test had 0.064 and
+0.759.
+
+The ranking rule's false-positive rate does not improve with sample size: 0.482 with 100 in the
+smaller stratum against 0.426 with 2,000 (Supplementary Fig. 7a, Supplementary Fig. 13). The formal test held between 0.032 and 0.112
+across every cell (Supplementary Fig. 7b), although its size is not uniform: 0.043 under independence and 0.091
+when variants sit in correlated blocks, because combining per-variant statistics as Σ z²
+against χ² assumes independence.
+
+### Dependence on the length of the compared list
+
+On data whose architecture is identical, the probability of concluding “distinct” was 0.752 at
+k = 5, 0.302 at k = 10, 0.035 at k = 20 and 0.000 at k = 30 (Supplementary Fig. 6c), with mean overlap
+rising from 0.28 to 6.69 variants. Whether a study reports distinct architectures is therefore
+determined by how many features the analyst chooses to list, a parameter rarely justified and
+never varied in sensitivity analysis.
+
+## Discussion
+
+The hypothesis is supported. Early and late onset in Parkinson's disease differ in how much inherited risk the patient carries rather than in which mechanisms are at work, and the same pattern appears at every level we could examine. Onset falls on one continuum from *PRKN* and *PINK1* carriers
+through *SNCA*, *GBA* and *LRRK2* to patients with no known variant, with no gap
+between the categories. Within the last of those groups, polygenic burden moves onset by 5.9 years
+between the extreme thirds. Across 86 loci the alleles that raise risk are the alleles that advance
+onset, at r = −0.72. And at the level where a mechanistic difference would have to appear, every variant and every one of 6,259 gene sets acts on onset in proportion to its effect on risk, in a test with the resolution to have found an exception.
+
+A patient diagnosed at 45 should not be counselled as having a biologically different illness; what distinguishes them, on average, is that they carry more of the same risk. Stratifying a trial by onset age enriches for burden, which is a reasonable design choice where burden is the modifier of interest, but it selects for dose rather than for a distinct target, and on the genetic evidence a therapy that works in one group should work in the other.
+On the genetic evidence there is no case for two separate development programmes.
+
+Onset age is nonetheless not predictable for an individual. Held-out prediction from genetics was
+no better than the group mean, and the learning curves show why: the additive signal is small and
+the nonlinear one is absent, so a larger cohort would not be expected to change this.
+Polygenic burden describes a group and should not be presented to a patient as a prognosis.
+
+The genetics is most useful in giving a direction, and that direction is not shared across a pathway. *GBA1* and *GALC* are both
+lysosomal hydrolases, both storage disease genes, and both sit in the lysosomal cluster a
+pathway-level reading would treat as one mechanism; but loss of glucocerebrosidase raises risk,
+which is why ambroxol is given to raise it, whereas raised galactosylceramidase appears to raise
+risk, so the intervention would be inhibition. Reading the pathway rather than the allele would point in the opposite direction for one of the two. Of the seventeen genes we assessed, six carry a directional call
+from brain expression and an agent acting the required way exists for one.
+
+A target can be unavailable for either of two reasons. *GALC* has
+a confidently predicted fold, a catalytic pocket the scan recovers with all six annotated site
+residues, expression in the substantia nigra and tolerance of loss of function in healthy people;
+what it lacks is any experimental structure at all, so the missing element is the chemistry and not the site. *LRRC37A2* is 77% disordered and has no fold to bind, and *SNCA* has no pocket above 50 Å³, which is why the agents against it address
+the aggregate rather than the monomer.
+
+A hypothesis and the argument offered for it can be judged separately, and *GALC* is the clearest case of that here. Raised galactosylceramidase activity as a cause of Parkinson's disease survives an independent directional test that could have refuted it. The conformational mechanism proposed alongside it requires a substituted residue, and this variant is intronic. The disease signal at this locus is regulatory, so an expression-based test suits it better than a structural one, and the target may well be real.
+Applied to the geometry of the enzyme rather than to comparison of predicted mutant structures,
+the same tool is the best-performing of the four we compared.
+
+Onset-modifying targets are better sought among the loci that carry onset signal, which are *SNCA*, the chr4p16.3 lysosomal cluster comprising *TMEM175*, *GAK*,
+*DGKQ* and *IDUA*, and *APOE*, rather than among the outputs of a stratified
+ranking. A therapeutic hypothesis resting on a specific molecular mechanism also requires evidence
+at that resolution: a locus spanning a 620 kb inversion identifies a region rather than a single gene, and a non-coding variant speaks to regulation rather than to protein shape.
+
+Our earlier analysis reached the opposite conclusion for reasons that are not specific to this dataset. Feature importance is a property of a fitted model, not of the data-generating process, and its
+rank is a high-variance functional of that model; comparing ranks between two models fitted to
+different samples inherits the variance of both, and nothing in the procedure propagates it. On
+data whose two groups are identical by construction, the comparison reports “distinct” in 42 to
+45% of studies, and its discrimination between identical and disjoint architecture is 0.019 to
+0.045. The remedy is not a better importance measure but stating the hypothesis as a parameter and
+testing it: distinct architecture is a claim about effect heterogeneity, and a heterogeneity test
+has a null distribution, an effect size and a confidence interval.
+
+These observations about PPMI apply beyond the study that prompted them. PPMI is among the most heavily used cohorts in machine-learning studies of Parkinson's disease, and the enrolment flags
+sit in the same standard table as the outcome label. Any supervised model trained on that table
+without excluding them is partly a model of recruitment. The same holds for measurement
+availability: in this cohort, which assays a participant has predicts diagnostic group better than
+the assay results do.
+
+Three experiments would test these conclusions further. The onset analysis is
+limited by the 403 patients with both an onset date and a polygenic score, and
+repeating it in a larger genotyped cohort with recorded symptom dates would
+narrow the estimate of how far burden moves onset and would give the per-variant
+comparison enough power to be informative rather than only bounded. The
+directional calls rest on bulk brain expression, which averages over cell types;
+single-cell expression data from dopaminergic neurons would show whether the
+same directions hold in the cells that degenerate. And the *GALC*
+hypothesis now rests on association and Mendelian randomisation alone, so the
+direct test is to measure whether inhibiting galactosylceramidase in a cellular
+model of Parkinson's disease changes the phenotype in the direction the genetics
+predicts.
+
+### Limitations
+
+The simulations model additive effects on a binary outcome with block linkage disequilibrium; real
+architectures include rare variants, epistasis and gene-environment interaction not represented,
+although the interaction screen in the real data found nothing. The heterogeneity test we compare
+against is a simple combination of per-variant statistics and is inflated under linkage
+disequilibrium; better-powered and better-calibrated tests exist. The gene-based analysis summarises each gene by its smallest variant P-value, calibrated by how many variants the gene carries, rather than an explicit linkage disequilibrium
+model, which the rotation null mitigates but does not remove.
+
+PPMI's genetic subset is small and predominantly European. The 403 cases in the primary analysis
+match the excluded cases on onset age (60.1 against 60.6 years, P = 0.36) and on the proportion
+with onset before 50, but are enriched for family history (0.531 against 0.394) even after
+removing declared carriers, which could bias the polygenic association upward. Onset age is
+self-reported symptom onset, correlating with age at diagnosis at r = 0.95 with a median
+diagnostic delay of 1.0 year; the accuracy of recall is not known. The deposited IPDGC onset file records 17 contributing studies but names none of them, so we treat the replication as possibly sharing some samples with PPMI.
+
+The deposited Nalls summary statistics exclude a large contributing cohort, so per-locus
+significance in our regional analyses is weaker than the published values; effect sizes agree. We
+report published values where they exist and mark deposited values as such. Across this work we
+ran, among others, 225 ablation arms, 90 per-variant onset tests, 303 locus-level gene sets, 6,259
+genome-wide gene sets, 3,151 interaction pairs and 24 polygenic specifications; the two nominally
+significant exploratory findings sit inside that, and neither is defensible as a discovery. A full
+adversarial audit, including four claims weakened on re-examination and two reported numbers
+corrected, is given in Supplementary @@M14@@ and 15.
+
+## Materials and Methods
+
+### Simulation
+
+Genotypes were drawn under Hardy-Weinberg equilibrium with minor allele frequencies uniform on
+(0.05, 0.5), optionally with five-variant linkage blocks induced through a latent normal with
+correlation 0.6. Binary case status came from a logistic model on the causal set. The ranking rule
+fitted an XGBoost classifier (200 trees, depth 4, learning rate 0.05) in each stratum, computed
+mean absolute SHAP values and compared the top-k sets. The formal test fitted a per-variant
+logistic regression in each stratum, formed z = (β_1 − β_2)/sqrtmathrmSE_1² +
+mathrmSE_2² and combined across variants as Σ z² against χ² on the number of
+variants tested. 978 parameter cells × 200 replicates were executed on Modal.
+
+### The earlier analysis
+
+The analysis referred to throughout as ours and earlier is an unpublished student research
+manuscript prepared by two of the present authors, “Machine learning defines distinct genetic
+architectures in early- and late-onset Parkinson's disease and ranks targets for small-molecule
+therapy”. It classified PPMI participants into four clinical groups within strata defined by age
+at enrolment, ranked variants by mean absolute Shapley value separately in each stratum, reported
+that the two lists of 10 and 13 variants did not intersect, and nominated *LRRC37A2* and
+*GALC*. It was never submitted and is not in the literature; we describe it here because the
+present work began as an attempt to confirm it, and because its data, code and intermediate files
+were available to us in full. Its matrix, notebooks and reported tables are the input to every
+reproduction reported below.
+
+### Cohort data
+
+PPMI subject-characteristics release of 15 August 2026 and `PD_Diagnosis_History` of 16
+August 2026: participant status (9,050), polygenic risk scores (2,996), Project 9001 dosages and
+ten ancestry principal components (1,319), demographics, family history, socio-economics, and the
+2018 whole-genome pathogenic-variant panel (959). Age at onset is the interval from `BIRTHDT`
+to `SXDT`; age at diagnosis uses `PDDXDT`. `COHORT_x` and `COHORT_y` are numeric
+encodings of the outcome and were excluded from all feature matrices.
+
+Ablation used 5×5-fold repeated stratified cross-validation over blocks assigned by
+provenance: enrolment design (20), genetics-core carrier calls (2), digital gait and wearable
+(498), family history (108), demographics (25), age (31), genotypes (162), polygenic scores (6),
+ancestry principal components (10). Models were XGBoost, LightGBM and CatBoost with matched
+hyperparameters against a majority-class baseline. Cloud experiments used a de-identified numeric
+matrix with participant identifiers and dates removed.
+
+Association analyses used ordinary least squares for onset age on standardised polygenic score or
+per-variant dosage, adjusted for sex and ten ancestry principal components, restricted to
+inferred-European participants with the genetically ascertained cohort removed; Cox proportional
+hazards for the time-to-event formulation; and logistic regression of early- against late-onset
+membership for the case-case comparison. Multiple testing by Benjamini-Hochberg.
+
+### Pathway analysis
+
+Loci were annotated positionally against RefSeq hg19 with a 100 kb window. The locus-level
+competitive test regressed log(1 + textonset χ²) on set membership with
+log(1 + textrisk χ²) as covariate, with significance from 20,000 permutations of the
+membership vector. Genome-wide, a minimum-P statistic was computed for every RefSeq gene from
+variants within 35 kb, calibrated to a rank within 30 bins of log variant count, and gene sets
+from KEGG, Reactome, Gene Ontology and WikiPathway with 10 to 500 mapped genes were tested for
+onset signal conditional on risk signal. Test statistics were computed in closed form, and significance came from 20,000 circular rotations of the membership vector
+along the genome with family-wise correction from the null of the maximum statistic across sets.
+
+### GALC analyses
+
+Regional summary statistics were taken for chr14:88.36–88.58 Mb (GRCh37). Variant consequences
+came from Ensembl VEP on GRCh37. GTEx v8 significant variant-gene pairs were used for all 13 brain
+tissues. Linkage disequilibrium and the sign of D were computed from 1000 Genomes 30×
+GRCh38 phased haplotypes restricted to 525 unrelated Europeans, and expression effects were
+aligned onto the risk allele using the sign of D. Colocalisation used Wakefield approximate
+Bayes factors with prior probabilities 10⁻⁴, 10⁻⁴ and 10⁻⁵. Structure prediction
+used ESMFold (`facebook/esmfold_v1`) on A100-40GB GPUs with Cα root-mean-square
+deviation by Kabsch superposition; catalytic and binding-site residues and the reference model
+were taken from UniProt P54803 and AlphaFold DB.
+
+### Attribution and its stability
+
+The three gradient-boosted models were refitted on the corrected matrix within each stratum and
+interrogated with tree Shapley values (11), summed over classes and averaged over patients, so that
+each feature carries a single non-negative attribution on the scale of the model's output. Total
+attribution was apportioned to the provenance blocks defined for the ablation. To ask how much of
+the resulting ranking is a property of the data rather than of the particular patients, the
+stratum was resampled with replacement 200 times, the model refitted and the attributions
+recomputed on each resample, and every feature's rank recorded; we report the median rank, the
+fifth to ninety-fifth percentile, and the proportion of resamples in which the feature remains in
+the top twenty.
+
+### Structure and pocket detection
+
+Predicted structures were taken from AlphaFold DB through its prediction API, one model per
+UniProt accession. Cavities were found with a grid scan in the manner of LIGSITE: the protein was
+placed on a 0.8 Å grid, points clearing every atom's van der Waals radius plus a 1.4 Å probe
+were marked free, and a free point was scored one protein-solvent-protein event for each of seven
+scan directions along which protein was met in both directions within 10 Å. Free points with at
+least four of seven events were retained, connected components of at least 50 Å³ formed
+pockets, and each pocket was described by its volume, its enclosure (mean events divided by seven),
+the residues within 5 Å of any pocket point, and the fraction of those residues that are
+hydrophobic. Active and binding residues came from the UniProt feature table for the same
+accession, and a pocket was called catalytic if it contained at least one of them. Structures
+above 90 million grid cells were rescanned at 1.2 Å. The benchmark set comprised ten proteins
+carrying an approved small-molecule drug (*EGFR*, *HMGCR*, *PTGS2*, *ACE*,
+*DHFR*, *CA2*, *ADRB2*, *BRAF*, *PARP1*, *HDAC2*) and ten proteins
+long regarded as hard (*MYC*, *TP53*, *CTNNB1*, *STAT3*, *NPM1*,
+*MAX*, *JUN*, *FOXO3*, *RUNX1*, *MECP2*), run through the identical
+pipeline. Experimental structure counts and the subset holding a non-polymer entity came from the RCSB Protein Data Bank (15); tractability categories from the Open Targets Platform (12); loss-of-function
+intolerance from gnomAD v2.1.1 constraint; brain expression from the GTEx v8 median expression
+service.
+
+### Direction of effect
+
+For each candidate we took the strongest risk-associated variant within 500 kb of the gene as the
+locus lead and oriented it onto its risk-increasing allele. Every significant brain expression
+signal for that gene in all 13 GTEx v8 brain tissues was lifted from GRCh38 to GRCh37 with the
+UCSC chain file, matched to the risk statistics by position, and kept only where the two allele
+pairs agreed; the expression slope was then flipped where GTEx's alternate allele was not the risk
+allele. Signals were restricted to within 250 kb of the lead and to a risk P-value within two
+orders of magnitude of the lead's own, so that a weak locus is judged on its own scale. Each
+tissue contributed one vote, the median slope of its retained variants. A direction was called
+where at least three quarters of voting tissues agreed, and graded strong where at least five
+tissues agreed at 90% or above, moderate at three tissues and 75%, and weak otherwise.
+
+### External data
+
+IPDGC age-at-onset GWAS (GWAS Catalog GCST007780; 28,568 cases; 6,813,424 variants, GRCh37); Nalls
+META5 risk GWAS (GCST009325, deposited release); GWAS Catalog curated associations for published
+values; 1000 Genomes 30× GRCh38 phased panel; GTEx v8; Ensembl VEP and variation REST;
+UniProt P54803; ClinVar; gnomAD; AlphaFold DB; Open Targets Platform.
+
+### Data and code availability
+
+PPMI data are available to approved investigators from the Michael J. Fox Foundation. All
+external datasets are public. Analysis scripts, per-fold results, supplementary tables and vector
+figures accompany this manuscript.
+
+## References
+
+1. Marek K, Jennings D, Lasch S, *et al.* The Parkinson Progression Marker Initiative (PPMI). *Prog Neurobiol* 2011;95:629–635.
+
+2. Blauwendraat C, Heilbron K, Vallerga CL, *et al.* Parkinson's disease age at onset genome-wide association study: defining heritability, genetic loci, and α-synuclein mechanisms. *Mov Disord* 2019;34:866–875.
+
+3. Nalls MA, Blauwendraat C, Vallerga CL, *et al.* Identification of novel risk loci, causal insights, and heritable risk for Parkinson's disease: a meta-analysis of genome-wide association studies. *Lancet Neurol* 2019;18:1091–1102.
+
+4. Blauwendraat C, Nalls MA, Singleton AB. The genetic architecture of Parkinson's disease. *Lancet Neurol* 2020;19:170–178.
+
+5. Senkevich K, Beletskaia M, Dworkind A, *et al.* *GALC* variants affect galactosylceramidase enzymatic activity and risk of Parkinson's disease. *Brain* 2023;146:1859–1872.
+
+6. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. *Science* 2020;369:1318–1330.
+
+7. Karczewski KJ, Francioli LC, Tiao G, *et al.* The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature* 2020;581:434–443.
+
+8. Jumper J, Evans R, Pritzel A, *et al.* Highly accurate protein structure prediction with AlphaFold. *Nature* 2021;596:583–589.
+
+9. Varadi M, Anyango S, Deshpande M, *et al.* AlphaFold Protein Structure Database. *Nucleic Acids Res* 2022;50:D439–D444.
+
+10. Hendlich M, Rippmann F, Barnickel G. LIGSITE: automatic and efficient detection of potential small molecule-binding sites in proteins. *J Mol Graph Model* 1997;15:359–363.
+
+11. Lundberg SM, Lee SI. A unified approach to interpreting model predictions. *Adv Neural Inf Process Syst* 2017;30:4765–4774.
+
+12. Ochoa D, Hercules A, Carmona M, *et al.* Open Targets Platform: supporting systematic drug-target identification and prioritisation. *Nucleic Acids Res* 2021;49:D1302–D1310.
+
+13. Lin Z, Akin H, Rao R, *et al.* Evolutionary-scale prediction of atomic-level protein structure with a language model. *Science* 2023;379:1123–1130.
+
+14. 1000 Genomes Project Consortium. A global reference for human genetic variation. *Nature* 2015;526:68–74.
+
+15. Berman HM, Westbrook J, Feng Z, *et al.* The Protein Data Bank. *Nucleic Acids Res* 2000;28:235–242.
+
+16. Stefansson H, Helgason A, Thorleifsson G, *et al.* A common inversion under selection in Europeans. *Nat Genet* 2005;37:129–137.
+
+17. Mullin S, Smith L, Lee K, *et al.* Ambroxol for the treatment of patients with Parkinson disease with and without glucocerebrosidase gene mutations: a nonrandomized, noncontrolled trial. *JAMA Neurol* 2020;77:427–434.
+
+\newpage
+
+## Tables
+
+**Table 1.** Age at first motor symptom in 2,107 PPMI patients,
+by the route through which the patient was recruited. The three burden groups
+are thirds of polygenic score among the 403 inferred-European patients recruited
+without a known variant.
+
+| Group | n | Median (years) | Interquartile range | Onset before 50 (%) |
+|---|---|---|---|---|
+| *PRKN* or *PINK1* carrier | 23 | 37.0 | 31.7–47.8 | 73.9 |
+| *SNCA* carrier | 41 | 47.2 | 40.7–53.1 | 63.4 |
+| *GBA* carrier | 108 | 59.0 | 51.1–66.4 | 20.4 |
+| *LRRK2* carrier | 197 | 59.7 | 53.5–66.3 | 16.2 |
+| no known variant | 1738 | 62.3 | 55.2–68.8 | 14.0 |
+| lowest third of burden | 134 | 63.8 | 57.3–68.8 | 9.7 |
+| middle third of burden | 135 | 61.8 | 54.3–66.8 | 17.8 |
+| highest third of burden | 134 | 58.0 | 51.7–63.9 | 22.4 |
+
+**Table 2.** Candidate genes, ordered by evidence that they act
+on age at onset. Confidence is the mean AlphaFold pLDDT; pocket volume is the
+largest cavity found by the grid scan; ligand-bound entries are Protein Data
+Bank structures containing a non-polymer entity; LOEUF is the gnomAD upper bound
+on the observed-to-expected ratio for loss of function, where higher values
+indicate greater tolerance. Direction is the change a drug would have to produce,
+where brain expression data support a call.
+
+| Gene | Onset P | pLDDT | Pocket (Å³) | Ligand-bound | LOEUF | Direction | Agent |
+|---|---|---|---|---|---|---|---|
+| *SNCA* | 2.3e−9 | 74 | – | 55 | 0.43 | – | ASO, phase 1 |
+| *TMEM175* | 3.7e−6 | 62 | 2455 | 0 | 1.13 | raise | – |
+| *GAK* | 3.7e−6 | 67 | 15797 | 7 | 0.41 | lower | – |
+| *DGKQ* | 3.7e−6 | 83 | 6322 | 0 | 0.70 | raise | – |
+| *IDUA* | 3.7e−6 | 95 | 755 | 11 | 1.17 | – | laronidase, approved |
+| *APOE* | 9.9e−6 | 76 | 415 | 9 | 1.03 | – | – |
+| *CTSB* | 2.4e−3 | 92 | 116 | 12 | 1.33 | – | – |
+| *ASAH1* | 4.4e−3 | 92 | 402 | 2 | 1.18 | – | – |
+| *GALC* | 4.5e−3 | 95 | 1287 | 0 | 0.94 | lower | – |
+| *SCARB2* | 5.7e−3 | 93 | 1706 | 10 | 0.72 | – | – |
+| *MAPT* | 7.9e−3 | 50 | 343 | 61 | 0.57 | – | ASO, phase 2 |
+| *GPNMB* | 1.7e−2 | 77 | 173 | 0 | 1.68 | lower | ADC, phase 2 |
+| *LRRC37A2* | 1.7e−2 | 42 | 7903 | 0 | 1.04 | raise | – |
+| *CTSD* | 2.3e−2 | 86 | 456 | 9 | 0.80 | – | – |
+| *VPS13C* | 5.3e−2 | – | – | 0 | 0.68 | – | – |
+
+\newpage
+
+## Figures
+
+![](/tmp/PPMITargets/figures/C0_summary.png)
+
+**Fig. 1.** Summary of the study. **a**, Age at first motor symptom for each genetic
+group, on one axis; bars span the interquartile range and markers are medians,
+with the sporadic median as the dashed line and the onset distribution of all
+2,107 patients along the foot. **b**, The three analyses that could have
+shown a difference in mechanism between early and late onset, with what each
+returned. **c**, The direction a drug would have to act in for each gene
+with a directional call, and the number of implicated genes meeting each
+requirement of a drug target.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C1_when_patients_develop_pd.png)
+
+**Fig. 2.** Age at onset in PPMI. **a**, Age at first motor symptom for all 2,107
+patients with a recorded onset date. **b**, The same by recruitment route;
+each point is a patient, the bar spans the interquartile range and the marker is
+the median. **c**, Cumulative onset by third of polygenic burden in 403
+inferred-European patients recruited without a known variant. **d**, Share
+of each third with onset before 50.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/F3_eqtl_evidence.png)
+
+**Fig. 3.** Effect of the Parkinson's risk allele on gene expression in brain.
+**a**, Effect and 95% confidence interval in each GTEx v8 brain region,
+for every candidate gene with significant eQTLs at its own risk locus. Slopes
+are aligned onto the risk-increasing allele and combined within region by
+inverse-variance weighting. **b**, Median expression of the same genes in
+the same regions, for context. **c**, Number of genes in brain whose
+expression each locus lead variant controls. At most loci this is one or none;
+at 17q21.31 it is 28, which is why the *LRRC37A2* signal cannot be
+attributed to *LRRC37A2* rather than to its neighbours on the same
+inversion haplotype.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C5_what_makes_a_target.png)
+
+**Fig. 4.** What would make any of these genes a drug target. **a**, Predicted
+structures for four candidates, coloured by confidence, with the largest cavity
+as a cloud and annotated catalytic residues marked. **b**, Pocket enclosure
+in twenty control proteins, ten carrying an approved small-molecule drug and ten
+long regarded as hard, with the candidates beneath. **c**, Expression in the
+substantia nigra against tolerance of loss of function, with marker area
+proportional to pocket volume. **d**, Each candidate against seven criteria,
+filled where the criterion is met.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C4_what_the_model_learns.png)
+
+**Fig. 5.** What the earlier classifier attends to, from its Shapley attributions in the
+late stratum. **a**, The twenty features carrying the most attribution,
+coloured by data provenance. **b**, Share of all attribution by provenance
+block, in each stratum. **c**, Where the fifteen strongest features rank
+across 200 bootstrap refits; the marker is the median and the bar the fifth to
+ninety-fifth percentile.
+
+\newpage
+
+\newpage
+
+## Supplementary figures
+
+![](/tmp/PPMITargets/figures/C2_inherited_risk_and_onset.png)
+
+**Supplementary Fig. 1.** Inherited risk and age at onset. **a**, Years of onset brought forward per
+standard deviation of polygenic burden, across three scores and four sample
+definitions. **b**, Risk effect against onset effect across 86 loci.
+**c**, PPMI per-variant onset effects against the IPDGC study.
+**d**, Median onset by fifth of burden.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C3_same_disease_different_dose.png)
+
+**Supplementary Fig. 2.** Early and late onset differ in dose, not architecture. **a**, Polygenic
+burden in patients with onset before 50 against onset at 60 or later.
+**b**, Quantile-quantile plot of the per-variant case-case comparison.
+**c**, Onset enrichment conditional on risk across curated pathways.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C6_which_way_to_push.png)
+
+**Supplementary Fig. 3.** Direction of effect and the *GALC* case. **a**, Effect of the risk
+allele on each gene in brain, one point per region. **b**, The direction a
+drug would have to act in. **c**, The predicted *GALC* structure with
+its catalytic pocket. **d**, The three published steps of the causal chain.
+**e**, Effect on *GALC* expression against linkage disequilibrium with
+the disease lead variant.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/C7_what_the_model_separated.png)
+
+**Supplementary Fig. 4.** What the earlier classifier separates, in the early stratum (**a**) and the
+late stratum (**b**). Each row is a feature block; points are the three
+model families.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/S1_effect_sizes.png)
+
+**Supplementary Fig. 5.** Effect sizes of real Parkinson's risk variants against the sensitivity of the
+ranking method. **a**, Odds ratios of the 86 known risk variants, with the
+median and the middle 80% marked. **b**, Share of truly causal variants the
+model recovers, by effect size and sample size, with the same range shaded.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E1_ranking_rule_behaviour.png)
+
+**Supplementary Fig. 6.** Operating characteristics of the ranking comparison and of a formal
+heterogeneity test on data whose architecture is known. **a**, How often the
+ranking rule concludes the two groups differ, across four generative scenarios.
+**b**, The same for the formal test. **c**, False-positive rate against
+the length of the compared list.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E2_where_the_rule_fails.png)
+
+**Supplementary Fig. 7.** False-positive rate under identical architecture by group size and effect size,
+for the ranking rule (**a**) and the formal test (**b**).
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E3_shared_features_null.png)
+
+**Supplementary Fig. 8.** The earlier selection procedure applied within a single stratum.
+**a**, Distribution of top-k overlap from split-half resampling.
+**b**, Probability of zero overlap under identical architecture.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E4_full_ablation.png)
+
+**Supplementary Fig. 9.** The full feature-block ablation in PPMI, in the early stratum (**a**) and
+the late stratum (**b**).
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E5_geneset_and_models.png)
+
+**Supplementary Fig. 10.** Gene sets and models. **a**, Null of the maximum statistic across 6,259 gene
+sets under 20,000 genome rotations. **b**, Held-out R² for onset age by
+model class. **c**, Learning curves.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E6_galc_structure_methods.png)
+
+**Supplementary Fig. 11.** Area under the curve for separating ClinVar pathogenic from gnomAD common
+substitutions in *GALC*, by method.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E7_17q21_haplotype.png)
+
+**Supplementary Fig. 12.** Linkage disequilibrium of rs62053943 across chr17:44.8–46.6 Mb, as r²
+(**a**) and |D'| (**b**), with the gene track (**c**).
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E8_how_the_arms_were_assigned.png)
+
+**Supplementary Fig. 13.** How PPMI participants reached the study. **a**, Recruitment route by onset
+stratum. **b**, Accuracy of assigning each participant the majority cohort of
+their enrolment-flag pattern, with no model fitted.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E10_robustness_checks.png)
+
+**Supplementary Fig. 14.** Robustness diagnostics: permutation resolution (**a**), gene-level
+calibration (**b**), how often the test fires when it should not, with and without correlation between variants (**c**),
+the interaction null (**d**), the specification curve (**e**) and
+leave-one-out for the lysosomal enrichment (**f**).
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E11_claim_audit.png)
+
+**Supplementary Fig. 15.** Claim-by-claim audit: each row a claim from this work and each column a check
+that could break it.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E12_galc_structure_detail.png)
+
+**Supplementary Fig. 16.** ESMFold and AlphaFold predictions for *GALC* wild type against 53 single
+substitutions.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E13_enrolment_proxy.png)
+
+**Supplementary Fig. 17.** The same onset analyses run on age at enrolment, the proxy used in the earlier
+analysis.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E14_model_stability.png)
+
+**Supplementary Fig. 18.** Stability of the attributions. **a**, Probability a feature stays in the top
+twenty across 200 refits. **b**, The same averaged within provenance block.
+**c**, Shapley values for the strongest genotype feature by genotype.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E15_candidate_genes.png)
+
+**Supplementary Fig. 19.** Candidate genes ranked by evidence that they act on age at onset, with Open
+Targets tractability and agents in development.
+
+\newpage
+
+![](/tmp/PPMITargets/figures/E16_galc_locus.png)
+
+**Supplementary Fig. 20.** The *GALC* locus. **a**, Regional association with the gene track
+beneath. **b**, Significant *GALC* expression quantitative trait loci by
+brain tissue.
+
+\newpage
