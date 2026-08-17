@@ -20,6 +20,10 @@ SUPP = ["C2_inherited_risk_and_onset", "C3_same_disease_different_dose",
         "E13_enrolment_proxy", "E14_model_stability",
         "E15_candidate_genes", "E16_galc_locus"]
 
+PAGEBREAK = ("\n```{=openxml}\n"
+             '<w:p><w:r><w:br w:type="page"/></w:r></w:p>\n'
+             "```\n")
+
 SUP = str.maketrans("0123456789-+", "⁰¹²³⁴⁵⁶⁷⁸⁹⁻⁺")
 
 GREEK = {r"\beta": "β", r"\alpha": "α", r"\lambda": "λ", r"\chi": "χ",
@@ -122,7 +126,7 @@ def main():
             if p and not p.startswith("input"):
                 md.append(p + "\n")
 
-    md.append("\\newpage\n\n## Tables\n")
+    md.append(PAGEBREAK + "\n## Tables\n")
     for label, cap, head, rows in parse_tables():
         md.append(f"**{label}.** {cap}\n")
         md.append("| " + " | ".join(head) + " |")
@@ -135,7 +139,7 @@ def main():
     legends = re.findall(r"\\figpage\{figures/(\w+)\.pdf\}\{\\figlead\{([^}]*)\}"
                          r"(.*?)\}\s*\n\s*\n", figs, re.S)
     order = MAIN + SUPP
-    md.append("\\newpage\n\n## Figures\n")
+    md.append(PAGEBREAK + "\n## Figures\n")
     for i, (stem, lead, text) in enumerate(legends):
         if i >= len(order):
             break
@@ -144,10 +148,10 @@ def main():
             print(f"missing {png}", file=sys.stderr)
             continue
         if i == len(MAIN):
-            md.append("\\newpage\n\n## Supplementary figures\n")
+            md.append(PAGEBREAK + "\n## Supplementary figures\n")
         md.append(f"![]({png})\n")
         md.append(f"**{inline(lead)}.** {inline(text)}\n")
-        md.append("\\newpage\n")
+        md.append(PAGEBREAK)
 
     (ROOT / "tools" / "manuscript_v2.md").write_text("\n".join(md))
     print(f"wrote markdown: {len('\n'.join(md).split())} words, "

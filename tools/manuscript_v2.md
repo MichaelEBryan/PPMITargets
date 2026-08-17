@@ -603,7 +603,10 @@ figures accompany this manuscript.
 
 17. Mullin S, Smith L, Lee K, *et al.* Ambroxol for the treatment of patients with Parkinson disease with and without glucocerebrosidase gene mutations: a nonrandomized, noncontrolled trial. *JAMA Neurol* 2020;77:427–434.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ## Tables
 
@@ -649,7 +652,10 @@ where brain expression data support a call.
 | *CTSD* | 2.3e−2 | 86 | 456 | 9 | 0.80 | – | – |
 | *VPS13C* | 5.3e−2 | – | – | 0 | 0.68 | – | – |
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ## Figures
 
@@ -664,7 +670,10 @@ returned. **c**, The direction a drug would have to act in for each gene
 with a directional call, and the number of implicated genes meeting each
 requirement of a drug target.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C1_when_patients_develop_pd.png)
 
@@ -675,7 +684,10 @@ the median. **c**, Cumulative onset by third of polygenic burden in 403
 inferred-European patients recruited without a known variant. **d**, Share
 of each third with onset before 50.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/F3_eqtl_evidence.png)
 
@@ -690,7 +702,10 @@ at 17q21.31 it is 28, which is why the *LRRC37A2* signal cannot be
 attributed to *LRRC37A2* rather than to its neighbours on the same
 inversion haplotype.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C5_what_makes_a_target.png)
 
@@ -703,7 +718,10 @@ substantia nigra against tolerance of loss of function, with marker area
 proportional to pocket volume. **d**, Each candidate against seven criteria,
 filled where the criterion is met.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C4_what_the_model_learns.png)
 
@@ -714,9 +732,15 @@ block, in each stratum. **c**, Where the fifteen strongest features rank
 across 200 bootstrap refits; the marker is the median and the bar the fifth to
 ninety-fifth percentile.
 
-\newpage
 
-\newpage
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ## Supplementary figures
 
@@ -728,7 +752,10 @@ definitions. **b**, Risk effect against onset effect across 86 loci.
 **c**, PPMI per-variant onset effects against the IPDGC study.
 **d**, Median onset by fifth of burden.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C3_same_disease_different_dose.png)
 
@@ -737,7 +764,10 @@ burden in patients with onset before 50 against onset at 60 or later.
 **b**, Quantile-quantile plot of the per-variant case-case comparison.
 **c**, Onset enrichment conditional on risk across curated pathways.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C6_which_way_to_push.png)
 
@@ -748,7 +778,10 @@ its catalytic pocket. **d**, The three published steps of the causal chain.
 **e**, Effect on *GALC* expression against linkage disequilibrium with
 the disease lead variant.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/C7_what_the_model_separated.png)
 
@@ -756,7 +789,10 @@ the disease lead variant.
 late stratum (**b**). Each row is a feature block; points are the three
 model families.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/S1_effect_sizes.png)
 
@@ -765,7 +801,10 @@ ranking method. **a**, Odds ratios of the 86 known risk variants, with the
 median and the middle 80% marked. **b**, Share of truly causal variants the
 model recovers, by effect size and sample size, with the same range shaded.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E1_ranking_rule_behaviour.png)
 
@@ -775,14 +814,20 @@ ranking rule concludes the two groups differ, across four generative scenarios.
 **b**, The same for the formal test. **c**, False-positive rate against
 the length of the compared list.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E2_where_the_rule_fails.png)
 
 **Supplementary Fig. 7.** False-positive rate under identical architecture by group size and effect size,
 for the ranking rule (**a**) and the formal test (**b**).
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E3_shared_features_null.png)
 
@@ -790,14 +835,20 @@ for the ranking rule (**a**) and the formal test (**b**).
 **a**, Distribution of top-k overlap from split-half resampling.
 **b**, Probability of zero overlap under identical architecture.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E4_full_ablation.png)
 
 **Supplementary Fig. 9.** The full feature-block ablation in PPMI, in the early stratum (**a**) and
 the late stratum (**b**).
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E5_geneset_and_models.png)
 
@@ -805,21 +856,30 @@ the late stratum (**b**).
 sets under 20,000 genome rotations. **b**, Held-out R² for onset age by
 model class. **c**, Learning curves.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E6_galc_structure_methods.png)
 
 **Supplementary Fig. 11.** Area under the curve for separating ClinVar pathogenic from gnomAD common
 substitutions in *GALC*, by method.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E7_17q21_haplotype.png)
 
 **Supplementary Fig. 12.** Linkage disequilibrium of rs62053943 across chr17:44.8–46.6 Mb, as r²
 (**a**) and |D'| (**b**), with the gene track (**c**).
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E8_how_the_arms_were_assigned.png)
 
@@ -827,7 +887,10 @@ substitutions in *GALC*, by method.
 stratum. **b**, Accuracy of assigning each participant the majority cohort of
 their enrolment-flag pattern, with no model fitted.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E10_robustness_checks.png)
 
@@ -836,28 +899,40 @@ calibration (**b**), how often the test fires when it should not, with and witho
 the interaction null (**d**), the specification curve (**e**) and
 leave-one-out for the lysosomal enrichment (**f**).
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E11_claim_audit.png)
 
 **Supplementary Fig. 15.** Claim-by-claim audit: each row a claim from this work and each column a check
 that could break it.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E12_galc_structure_detail.png)
 
 **Supplementary Fig. 16.** ESMFold and AlphaFold predictions for *GALC* wild type against 53 single
 substitutions.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E13_enrolment_proxy.png)
 
 **Supplementary Fig. 17.** The same onset analyses run on age at enrolment, the proxy used in the earlier
 analysis.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E14_model_stability.png)
 
@@ -865,14 +940,20 @@ analysis.
 twenty across 200 refits. **b**, The same averaged within provenance block.
 **c**, Shapley values for the strongest genotype feature by genotype.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E15_candidate_genes.png)
 
 **Supplementary Fig. 19.** Candidate genes ranked by evidence that they act on age at onset, with Open
 Targets tractability and agents in development.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
 
 ![](/tmp/PPMITargets/figures/E16_galc_locus.png)
 
@@ -880,4 +961,7 @@ Targets tractability and agents in development.
 beneath. **b**, Significant *GALC* expression quantitative trait loci by
 brain tissue.
 
-\newpage
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
