@@ -81,7 +81,7 @@ def main():
     eq = pd.read_csv(f"{OUT}/121_galc_eqtl_brain.csv")
     g = eq[eq.gene == "GALC"].copy()
     g["pos"] = g.variant.str.split("_").str[1].astype(int)
-    g["re"] = g.variant.str.split("_").str[2]
+    g["ref"] = g.variant.str.split("_").str[2]
     g["alt"] = g.variant.str.split("_").str[3]
     print(f"\n[2] GALC brain eQTLs: {len(g)} significant pairs in "
           f"{g.tissue.nunique()} of 13 tissues")
@@ -136,7 +136,7 @@ def main():
             prox.append((r2, r.slope, r.slope * sgn, sgn, r.tissue, r.variant, r.pval,
                          ids[int(j[0])][1], ids[int(j[0])][2]))
     P = pd.DataFrame(prox, columns=["r2", "slope", "slope_on_risk_allele", "D_sign",
-                                    "tissue", "variant", "p", "re", "alt"])
+                                    "tissue", "variant", "p", "ref", "alt"])
     P.to_csv(f"{OUT}/124_galc_eqtl_ld_all.csv", index=False)
     hi = P[P.r2 > 0.6]
     print(f"\n    eQTLs in LD r2>0.6 with the PD lead variant: {len(hi)} "

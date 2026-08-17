@@ -26,8 +26,7 @@ that run in order within it. Scripts communicate only through files in
 | `05_expression` | effect of the risk allele on gene expression in brain |
 | `06_targets` | structures, binding pockets, constraint and tractability |
 | `07_attribution` | Shapley attributions for the earlier classifier |
-| `08_figures_and_tables` | every figure and table in the article |
-| `09_article` | LaTeX source, PDF, and the Word build for submission |
+| `08_figures_and_tables` | every figure and table |
 | `lib` | paths, plotting style, pocket detection, protein drawing |
 
 ## Data
@@ -89,8 +88,8 @@ rank of each feature bootstrapped over 200 resamples.
 `01_shap_importance.py` takes roughly two hours on eight cores.
 
 **08_figures_and_tables.** Reads only from `results/` and writes a PDF and a
-PNG for each figure into `figures/`. Files are named for their place in the
-article: `fig01` to `fig05`, then `supp01` to `supp20`.
+PNG for each figure into `figures/`. Five are main figures, `fig01` to
+`fig05`, and twenty are supplementary, `supp01` to `supp20`.
 
 ## How the risk-allele expression effects are assessed
 
@@ -207,35 +206,8 @@ step rather than a large computation.
 | `94b_interaction_nulls.json` | interaction permutation nulls | a rerun of the interaction screen with the carrier filter |
 | `16_prs_negative_control.csv` | polygenic negative control | a variant of `02_earlier_pipeline/05_corrected_analysis.py` |
 
-## Article
-
-`09_article/article.tex` is the source. Build with `xelatex article.tex`, run
-twice. Figures are taken from `figures/` by the names used in the article.
-
-The Word version required for submission is generated from the same source, so
-the two cannot drift apart:
-
-```bash
-python 09_article/build/01_reference_docx.py
-python 09_article/build/02_latex_to_markdown.py
-pandoc 09_article/build/article_jei.md \
-  --reference-doc=09_article/build/jei_reference.docx \
-  --from=markdown+raw_attribute+pipe_tables+superscript+subscript \
-  --to=docx --resource-path=.:figures -o 09_article/article_jei.docx
-python 09_article/build/03_check_docx.py
-python 09_article/build/04_page_count.py
-```
-
-`01_reference_docx.py` downloads the journal's author template on first run and
-keeps its page setup, margins and continuous line numbering, then sets every
-style to Arial 11 at 1.5 line spacing with bold headings. `03_check_docx.py`
-tests the built file against each requirement in turn and reports them
-separately. `04_page_count.py` lays the text out with Arial metrics to estimate
-the printed length from the Introduction to the end of the Methods, which the
-journal caps at ten pages. It currently runs to about 15.7 pages.
-
 ## Requirements
 
-Python 3.12. `pip install -r requirements.txt`. The Word build also needs
-pandoc. `06_targets/04_galc_structure.py` needs `torch` and `transformers` and
-is intended to run on Modal rather than locally.
+Python 3.12. `pip install -r requirements.txt`.
+`06_targets/04_galc_structure.py` needs `torch` and `transformers` and is
+intended to run on Modal rather than locally.

@@ -13,8 +13,5 @@ __pycache__/
 *.fls
 *.synctex.gz
 
-09_article/build/jei_template.docx
-09_article/build/jei_reference.docx
-09_article/build/article_jei.md
 
 .DS_Store
