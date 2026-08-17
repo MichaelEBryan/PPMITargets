@@ -74,9 +74,9 @@ def main():
     dep = pd.read_csv(f"{RES}/163_shap_dependence.csv")
     S = "LOPD_ge60"
 
-    fig = plt.figure(figsize=(7.0, 9.6))
-    outer = fig.add_gridspec(3, 1, height_ratios=[1.55, 0.62, 1.05],
-                             hspace=0.50, left=0.365, right=0.965,
+    fig = plt.figure(figsize=(7.0, 8.4))
+    outer = fig.add_gridspec(3, 1, height_ratios=[1.50, 0.58, 1.00],
+                             hspace=0.46, left=0.365, right=0.965,
                              top=0.955, bottom=0.062)
 
     # a. the twenty features the model leans on most

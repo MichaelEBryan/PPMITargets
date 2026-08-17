@@ -35,8 +35,8 @@ def main():
     v = pd.read_csv(f"{RES}/184_eqtl_variants.csv")
 
     order = (t.groupby("gene").beta.median().sort_values().index.tolist())
-    fig = plt.figure(figsize=(7.2, 10.8))
-    gs = fig.add_gridspec(3, 1, height_ratios=[2.55, 0.90, 0.72], hspace=0.50,
+    fig = plt.figure(figsize=(7.2, 8.6))
+    gs = fig.add_gridspec(3, 1, height_ratios=[2.00, 0.80, 0.98], hspace=0.46,
                           left=0.245, right=0.945, top=0.940, bottom=0.058)
 
     # per-tissue effect, aligned to the risk allele
@@ -61,7 +61,7 @@ def main():
         yy.append(ymid); ylab.append(gene); ycol.append(col)
         row += 1.5
 
-    ax.set_yticks(tick_y); ax.set_yticklabels(tick_lab, fontsize=6.8)
+    ax.set_yticks(tick_y); ax.set_yticklabels(tick_lab, fontsize=6.2)
     for t_ in ax.get_yticklabels():
         t_.set_color(GREY)
     for ym, lab, col in zip(yy, ylab, ycol):
@@ -102,7 +102,7 @@ def main():
     ax2.set_yscale("log")
     ax2.set_xticks(x)
     ax2.set_xticklabels([SHORT[tt] for tt in TISSUE_ORDER], rotation=45,
-                        ha="right", fontsize=7.0)
+                        ha="right", fontsize=6.6)
     ax2.set_xlim(-0.5, len(x) + 2.4)
     ax2.set_ylabel("expression\n(median TPM)")
 
@@ -121,7 +121,7 @@ def main():
         ax3.text(n + 0.5, yi, str(int(n)), va="center", fontsize=7.6,
                  color=INK)
     ax3.set_yticks(yb)
-    ax3.set_yticklabels(lc.label, fontsize=7.4)
+    ax3.set_yticklabels(lc.label, fontsize=7.0)
     for t_, r_ in zip(ax3.get_yticklabels(), lc.chr):
         t_.set_style("italic")
         if r_ == 17:

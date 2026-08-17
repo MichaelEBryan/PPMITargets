@@ -55,9 +55,12 @@
 % not appear in the output at all, so each figure is placed on a page of its own
 % and its legend is ordinary text, free to continue onto the next page. The
 % optional argument is the graphic width, \textwidth unless given.
+% The graphic is capped in height as well as width so that a tall figure cannot
+% push its own legend onto the next page, which leaves a blank one behind it.
 \newcommand{\figpage}[3][\textwidth]{%
   \clearpage
-  \noindent\makebox[\linewidth]{\includegraphics[width=#1]{#2}}\par
+  \noindent\makebox[\linewidth]{%
+    \includegraphics[width=#1,height=0.82\textheight,keepaspectratio]{#2}}\par
   \vspace{5pt}%
   \begingroup\footnotesize\setlength{\parindent}{0pt}%
   \noindent #3\par\endgroup}
