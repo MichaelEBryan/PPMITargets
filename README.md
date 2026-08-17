@@ -135,7 +135,34 @@ values derived from PPMI.
 ## Manuscript
 
 `manuscript/` holds the LaTeX source and the compiled PDF. Build with
-`xelatex manuscript.tex`, run twice.
+`xelatex manuscript_v2.tex`, run twice.
+
+The Word version required for submission is generated from the same source, so
+the two cannot drift apart:
+
+```bash
+python tools/make_reference.py   # formatting taken from the journal template
+python tools/tex_to_jei.py       # LaTeX to Markdown, in the required order
+pandoc tools/manuscript_jei.md --reference-doc=tools/jei_reference.docx \
+  --from=markdown+raw_attribute+pipe_tables+superscript+subscript \
+  --to=docx --resource-path=.:figures -o manuscript/Khare_Bryan_JEI.docx
+python tools/check_docx.py       # verify against the journal's requirements
+python tools/page_count.py       # printed length, measured in Arial 11
+```
+
+`make_reference.py` reads the journal's own author template and keeps its page
+setup, one-inch margins and continuous line numbering, then sets every style to
+Arial 11 at 1.5 line spacing with bold headings. Headings are written as bold
+paragraphs rather than Word heading styles, as the template asks.
+
+`check_docx.py` tests the built file against each requirement in turn: page
+size, margins, line numbering, font, size, spacing, section order, figure
+sizing, and that every embedded image has a declared content type. It reports
+each check separately so a failure says which requirement is unmet.
+
+`page_count.py` lays out the text with the installed Arial metrics to estimate
+the printed length from the Introduction to the end of the Methods, which the
+journal caps at ten pages.
 
 ## Requirements
 
