@@ -244,7 +244,7 @@ def ed11():
     ax.tick_params(length=0)
     h = [Rectangle((0, 0), 1, 1, facecolor=COL[k])
          for k in ("pass", "part", "fail", "na")]
-    ax.legend(h, ["holds", "holds in part", "fails", "not applicable"],
+    ax.legend(h, ["holds", "holds in part", "not supported", "not applicable"],
               loc="upper center", bbox_to_anchor=(0.5, -0.020), ncol=4)
     save(fig, "E11_claim_audit")
 
