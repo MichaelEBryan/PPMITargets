@@ -12,25 +12,29 @@ different genetic architecture\par}
 \vspace{6mm}
 {\small
 \noindent\textbf{Summary.}~Parkinson's disease that begins before 50 is often
-treated as a different illness from disease that begins after 60. If the two
-forms really had different genetic causes, they would need different drugs, and
-trials would have to be split by age at onset. We tested this in 2,107 patients
-in the Parkinson's Progression Markers Initiative who have a recorded date of
-first motor symptom. Onset formed a single continuum: median 37.0 years in
-carriers of a \gene{PRKN} or \gene{PINK1} variant, 47.2 in \gene{SNCA}
-carriers, 59.0 in \gene{GBA} carriers, 59.7 in \gene{LRRK2} carriers, and 62.3
-in the 1,738 patients recruited without a known variant. Within that last group,
-patients in the highest third of common-variant burden developed the disease 5.9
-years earlier than those in the lowest third. We then looked for any sign that
-different mechanisms were at work in early and late onset, and found none: no
-individual variant of the 86 tested, and none of 6,259 gene sets, carried signal
-on onset beyond its signal on risk, in analyses with enough resolution to have
-detected one. Onset age was also not predictable for an individual patient. What
-the genetics did give was a direction: for six genes we could read from brain
-expression data whether a drug would have to raise or lower the gene, and the
+treated as a different illness from disease that begins after 60, and if the two
+forms had different genetic causes they would need different drugs. We
+hypothesised that age at onset instead reflects how much inherited risk a
+patient carries, and therefore that the variants and pathways acting on onset
+would be the same ones that act on risk. We tested this in 2,107 patients in the
+Parkinson's Progression Markers Initiative with a recorded date of first motor
+symptom. Onset formed a single continuum: median 37.0 years in carriers of a
+\gene{PRKN} or \gene{PINK1} variant, 47.2 in \gene{SNCA} carriers, 59.0 in
+\gene{GBA} carriers, 59.7 in \gene{LRRK2} carriers, and 62.3 in the 1,738
+patients with no known variant. Among that last group, patients in the highest
+third of common-variant burden developed the disease 5.9 years earlier than
+those in the lowest third. Neither any of 86 individual variants nor any of
+6,259 gene sets carried signal on onset beyond its signal on risk, in analyses
+able to detect one had it been present, and onset age was not predictable for an
+individual patient. These results support the hypothesis. The genetics was
+informative in one further respect: for six genes we could read from brain
+expression data whether a drug would need to raise or lower the gene, and the
 answer differed between two lysosomal genes that a pathway-level reading would
-have treated alike. We also report why an earlier analysis of the same cohort,
-which we carried out ourselves, reached the opposite conclusion.\par}
+treat alike.\par
+\vspace{1.5mm}
+\noindent\textbf{Funding.}~None. The Parkinson's Progression Markers Initiative
+is sponsored by the Michael J.\ Fox Foundation for Parkinson's Research and its
+funding partners.\par}
 
 \vspace{5mm}
 
@@ -46,17 +50,30 @@ expected to work in the other.
 Genetics offers a way to test it. Rare variants in \gene{PRKN}, \gene{PINK1} and
 \gene{SNCA} bring onset forward by decades, variants in \gene{GBA} and
 \gene{LRRK2} by a few years, and beyond them about ninety common variants each
-shift risk by a few per cent. If early and late onset were different diseases,
-the variants acting on the two would differ. If they were the same disease at
-different doses, the same variants would act on both, and the earliest patients
-would carry more of them.
+shift risk by a few per cent (3, 4). A genome-wide study of onset in 28,568
+patients found that common risk variants also move onset, but identified few
+loci acting on onset in particular (2). Two explanations remain open. Early and
+late onset may be different diseases, in which case the variants acting on the
+two would differ. Or they may be the same disease at different doses, in which
+case the same variants would act on both and the earliest patients would carry
+more of them.
 
-We first analysed these data ourselves in an earlier, unpublished study, in
-which classifiers trained separately in patients enrolled before 50 and at 60 or
-later produced variant rankings that shared almost nothing. We took that as
-evidence of distinct architectures and nominated \gene{LRRC37A2} and \gene{GALC}
-as targets. The work reported here began as an attempt to confirm that result
-using age at first motor symptom rather than age at enrolment. It does not, and we report why alongside the positive findings.
+We hypothesised that age at onset in Parkinson's disease is set by how much
+inherited risk a patient carries rather than by which variants they carry. If
+that is correct, the variants and pathways acting on onset should be the same
+ones that act on risk, and no variant or pathway should act on onset over and
+above its effect on risk. We tested this prediction in the Parkinson's
+Progression Markers Initiative (1), using age at first motor symptom, and then
+asked what the answer implies for drug targets.
+
+Our results support the hypothesis. Onset forms one continuum from single-gene
+carriers through to patients with no known variant, common-variant burden
+separates the extreme thirds of that last group by almost six years, and we
+could find no variant and no gene set that acts on onset beyond its effect on
+risk. We began this work as an attempt to confirm an earlier analysis of our own,
+which had used age at enrolment and had concluded the opposite; that analysis
+does not survive the change of outcome variable, and we report why alongside the
+positive findings.
 
 \section*{Results}
 
@@ -73,7 +90,7 @@ patients who carry no known variant at all (Fig.~2b).
 
 \subsection*{Polygenic burden and age at onset}
 
-Age at first motor symptom is available for 2,107 PPMI cases (mean 60.5 years, s.d.\ 10.7,
+Age at first motor symptom is available for 2,107 PPMI cases (1) (mean 60.5 years, s.d.\ 10.7,
 range 15.4 to 92.2; 340 with onset before 50 and 1,206 after 60). Splitting the 403
 inferred-European cases recruited without a known variant into thirds of polygenic burden, the
 highest third reached a median onset of 58.0 years against 63.8 in the lowest, a difference of 5.9
@@ -91,11 +108,10 @@ directly, each standard deviation raised the odds of onset before 50 rather than
 (1.34 to 2.58, $P = 2.1\times10^{-4}$; 67 against 216 cases). The two distributions of burden
 overlap almost completely and differ in location alone (Supplementary Fig.~2a).
 
-Across 86 independent loci, using external data alone, the risk effect and the onset effect
+Across the 86 independent risk loci of Nalls and colleagues (3), using external data alone, the risk effect and the onset effect
 correlate at $r$ = $-$0.721 ($P = 4.9\times10^{-15}$), with 85\% of risk-increasing alleles
 advancing onset (Supplementary Fig.~1b). Eleven of the twenty loci reaching genome-wide significance for risk
-also reach $P < 0.05$ for onset. PPMI's own per-variant onset effects reproduce the IPDGC
-age-at-onset study in aggregate ($r$ = +0.375 across 86 loci, $P = 3.7\times10^{-4}$,
+also reach $P < 0.05$ for onset. PPMI's own per-variant onset effects reproduce the IPDGC age-at-onset study (2) in aggregate ($r$ = +0.375 across 86 loci, $P = 3.7\times10^{-4}$,
 inverse-variance weighted slope 1.63 $\pm$ 0.36; Supplementary Fig.~1c) while no single variant survives
 correction. At
 the level of individual variants the case-case comparison gives a global heterogeneity statistic
@@ -161,7 +177,7 @@ sample size tested. The additive model is limited by sample size. The nonlinear 
 
 \subsection*{Structural tractability of the implicated genes}
 
-We profiled each candidate gene against its AlphaFold model. A grid scan for buried cavities recovered the
+We profiled each candidate gene against its AlphaFold model (8, 9). A grid scan for buried cavities in the manner of LIGSITE (10) recovered the
 annotated catalytic site as the largest pocket in \gene{GALC} (1,287~\AA$^3$, containing all six
 UniProt-annotated active and binding residues), \gene{GBA1} (1,050~\AA$^3$, both catalytic
 glutamates), \gene{GAK}, \gene{APOE} and \gene{LRRK2}, so the scan is locating annotated sites.
@@ -173,8 +189,7 @@ enclosure separated them at an area under the curve of 0.96, ahead of hydrophobi
 correctly.
 
 \gene{GALC} has a confidently predicted fold (mean confidence 94.6) and a well-formed catalytic pocket, is expressed in the
-substantia nigra at 12.1 transcripts per million, and is tolerant of loss of function in healthy
-people (LOEUF 0.94); what it does not have is a single experimental structure in the Protein Data
+substantia nigra at 12.1 transcripts per million, and is tolerant of loss of function in healthy people (LOEUF 0.94) (7); what it does not have is a single experimental structure in the Protein Data
 Bank, with or without a ligand. \gene{LRRC37A2} is predicted with low confidence throughout, at a mean of 42.3 and with 77\% of residues below the level at which a predicted structure carries information, so the cavity reported in it is an artefact of a disordered chain. \gene{SNCA} has no pocket above 50~\AA$^3$ at all, which is why the agents
 against it target the aggregate rather than the monomer (Fig.~4).
 
@@ -184,8 +199,7 @@ where a kinase or a carbonic anhydrase site is tight. Enclosure is informative a
 
 \subsection*{Direction of effect at each locus}
 
-For each candidate we took every significant
-brain expression signal for the gene, lifted it to the coordinates of the risk study, aligned the
+For each candidate we took every significant brain expression signal for the gene in GTEx v8 (6), lifted it to the coordinates of the risk study, aligned the
 effect onto the risk-increasing allele, and kept the signals at the gene's own risk locus; each of
 the 13 brain regions then voted once, using the median of its own variants, so that a region with many records does not dominate. That gives 39,694 aligned
 records.
@@ -200,7 +214,7 @@ the gene. Of the six, an agent acting in the required direction exists for one, 
 
 \gene{GBA1} and \gene{GALC} are both lysosomal
 hydrolases and both are lysosomal storage disease genes, but the genetics point opposite ways:
-loss of glucocerebrosidase raises risk, so ambroxol is given to raise it, whereas raised
+loss of glucocerebrosidase raises risk, so ambroxol is given to raise it (17), whereas raised
 galactosylceramidase appears to raise risk, so the intervention would be inhibition. A programme
 that treated the lysosomal loci as one mechanism would get the sign wrong for one of them.
 
@@ -219,8 +233,7 @@ no amino acid, so there is no substituted residue and the conformational mechani
 evaluated. Across the 90-variant panel only four variants are missense and 64 are intronic. Of the
 25 strongest Parkinson's disease variants at the \gene{GALC} locus, none is coding (Supplementary Fig.~20a).
 
-The underlying hypothesis is separable from that error and is due to Senkevich and colleagues,
-who report that rs979812 raises blood galactosylceramidase activity and that Mendelian
+The underlying hypothesis is separable from that error and is due to Senkevich and colleagues (5), who report that rs979812 raises blood galactosylceramidase activity and that Mendelian
 randomisation places raised activity causally upstream of Parkinson's disease. rs979812-T raises
 disease risk ($\beta$ = 0.061, 95\% confidence interval 0.043 to 0.079, $P = 6\times10^{-11}$)
 and raises enzyme activity ($\beta$ = 1.205, 1.09 to 1.32, $P = 5\times10^{-95}$, n = 1,454), with
@@ -242,7 +255,7 @@ substantia nigra, putamen, caudate and cortex (Supplementary Fig.~20b).
 
 \subsection*{Structure prediction at the \gene{GALC} locus}
 
-We folded \gene{GALC} wild type against 53 single substitutions with ESMFold, comprising 22 ClinVar
+We folded \gene{GALC} wild type against 53 single substitutions with ESMFold (13), comprising 22 ClinVar
 pathogenic, 13 gnomAD common and 18 random variants. Fifty-two of the 53 predicted mutant
 structures sit within 1~\AA{} C$\alpha$ root-mean-square deviation of wild type, and the largest
 change in mean predicted confidence across all 53 is 1.03 pLDDT points (Supplementary Fig.~16).
@@ -260,8 +273,7 @@ gain-of-function structure prediction could be attempted, by this or any method.
 
 \subsection*{The 17q21.31 locus}
 
-The early-onset nomination rested on rs62053943, which falls inside \gene{LRRC37A2}. The variant
-sits in a polymorphic inversion. In 525 unrelated European samples from the 1000 Genomes Project,
+The early-onset nomination rested on rs62053943, which falls inside \gene{LRRC37A2}. The variant sits in a polymorphic inversion that is common in Europeans (16). In 525 unrelated European samples from the 1000 Genomes Project (14),
 the haplotype carrying it extends 620~kb at $|D'| \geq 0.9$ across \gene{CRHR1}, \gene{LRRC37A2},
 \gene{MAPT} and \gene{KANSL1}, and 1,312 common variants sit at $r^2 \geq 0.5$, \gene{MAPT} among
 them (Supplementary Fig.~12). Expression data does not separate them either: the variant is a significant brain
@@ -390,7 +402,7 @@ never varied in sensitivity analysis.
 
 \section*{Discussion}
 
-Early and late onset in Parkinson's disease differ in how much inherited risk the patient carries rather than in which mechanisms are at work, and the same pattern appears at every level we could examine. Onset falls on one continuum from \gene{PRKN} and \gene{PINK1} carriers
+The hypothesis is supported. Early and late onset in Parkinson's disease differ in how much inherited risk the patient carries rather than in which mechanisms are at work, and the same pattern appears at every level we could examine. Onset falls on one continuum from \gene{PRKN} and \gene{PINK1} carriers
 through \gene{SNCA}, \gene{GBA} and \gene{LRRK2} to patients with no known variant, with no gap
 between the categories. Within the last of those groups, polygenic burden moves onset by 5.9 years
 between the extreme thirds. Across 86 loci the alleles that raise risk are the alleles that advance
@@ -445,6 +457,19 @@ without excluding them is partly a model of recruitment. The same holds for meas
 availability: in this cohort, which assays a participant has predicts diagnostic group better than
 the assay results do.
 
+Three experiments would test these conclusions further. The onset analysis is
+limited by the 403 patients with both an onset date and a polygenic score, and
+repeating it in a larger genotyped cohort with recorded symptom dates would
+narrow the estimate of how far burden moves onset and would give the per-variant
+comparison enough power to be informative rather than only bounded. The
+directional calls rest on bulk brain expression, which averages over cell types;
+single-cell expression data from dopaminergic neurons would show whether the
+same directions hold in the cells that degenerate. And the \gene{GALC}
+hypothesis now rests on association and Mendelian randomisation alone, so the
+direct test is to measure whether inhibiting galactosylceramidase in a cellular
+model of Parkinson's disease changes the phenotype in the direction the genetics
+predicts.
+
 \subsection*{Limitations}
 
 The simulations model additive effects on a binary outcome with block linkage disequilibrium; real
@@ -473,7 +498,7 @@ significant exploratory findings sit inside that, and neither is defensible as a
 adversarial audit, including four claims weakened on re-examination and two reported numbers
 corrected, is given in Supplementary @@M14@@ and 15.
 
-\section*{Methods}
+\section*{Materials and Methods}
 
 \subsection*{Simulation}
 
@@ -548,7 +573,7 @@ were taken from UniProt P54803 and AlphaFold DB.
 \subsection*{Attribution and its stability}
 
 The three gradient-boosted models were refitted on the corrected matrix within each stratum and
-interrogated with tree Shapley values, summed over classes and averaged over patients, so that
+interrogated with tree Shapley values (11), summed over classes and averaged over patients, so that
 each feature carries a single non-negative attribution on the scale of the model's output. Total
 attribution was apportioned to the provenance blocks defined for the ablation. To ask how much of
 the resulting ranking is a property of the data rather than of the particular patients, the
@@ -574,8 +599,7 @@ carrying an approved small-molecule drug (\gene{EGFR}, \gene{HMGCR}, \gene{PTGS2
 \gene{DHFR}, \gene{CA2}, \gene{ADRB2}, \gene{BRAF}, \gene{PARP1}, \gene{HDAC2}) and ten proteins
 long regarded as hard (\gene{MYC}, \gene{TP53}, \gene{CTNNB1}, \gene{STAT3}, \gene{NPM1},
 \gene{MAX}, \gene{JUN}, \gene{FOXO3}, \gene{RUNX1}, \gene{MECP2}), run through the identical
-pipeline. Experimental structure counts and the subset holding a non-polymer entity came from the
-RCSB search API; tractability categories from the Open Targets Platform; loss-of-function
+pipeline. Experimental structure counts and the subset holding a non-polymer entity came from the RCSB Protein Data Bank (15); tractability categories from the Open Targets Platform (12); loss-of-function
 intolerance from gnomAD v2.1.1 constraint; brain expression from the GTEx v8 median expression
 service.
 
@@ -604,6 +628,30 @@ UniProt P54803; ClinVar; gnomAD; AlphaFold DB; Open Targets Platform.
 PPMI data are available to approved investigators from the Michael J.\ Fox Foundation. All
 external datasets are public. Analysis scripts, per-fold results, supplementary tables and vector
 figures accompany this manuscript.
+
+
+\section*{References}
+
+{\footnotesize
+\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parskip}{0pt}
+\item Marek K, Jennings D, Lasch S, \emph{et al.} The Parkinson Progression Marker Initiative (PPMI). \emph{Prog Neurobiol} 2011;95:629--635.
+\item Blauwendraat C, Heilbron K, Vallerga CL, \emph{et al.} Parkinson's disease age at onset genome-wide association study: defining heritability, genetic loci, and $\alpha$-synuclein mechanisms. \emph{Mov Disord} 2019;34:866--875.
+\item Nalls MA, Blauwendraat C, Vallerga CL, \emph{et al.} Identification of novel risk loci, causal insights, and heritable risk for Parkinson's disease: a meta-analysis of genome-wide association studies. \emph{Lancet Neurol} 2019;18:1091--1102.
+\item Blauwendraat C, Nalls MA, Singleton AB. The genetic architecture of Parkinson's disease. \emph{Lancet Neurol} 2020;19:170--178.
+\item Senkevich K, Beletskaia M, Dworkind A, \emph{et al.} \emph{GALC} variants affect galactosylceramidase enzymatic activity and risk of Parkinson's disease. \emph{Brain} 2023;146:1859--1872.
+\item GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. \emph{Science} 2020;369:1318--1330.
+\item Karczewski KJ, Francioli LC, Tiao G, \emph{et al.} The mutational constraint spectrum quantified from variation in 141,456 humans. \emph{Nature} 2020;581:434--443.
+\item Jumper J, Evans R, Pritzel A, \emph{et al.} Highly accurate protein structure prediction with AlphaFold. \emph{Nature} 2021;596:583--589.
+\item Varadi M, Anyango S, Deshpande M, \emph{et al.} AlphaFold Protein Structure Database. \emph{Nucleic Acids Res} 2022;50:D439--D444.
+\item Hendlich M, Rippmann F, Barnickel G. LIGSITE: automatic and efficient detection of potential small molecule-binding sites in proteins. \emph{J Mol Graph Model} 1997;15:359--363.
+\item Lundberg SM, Lee SI. A unified approach to interpreting model predictions. \emph{Adv Neural Inf Process Syst} 2017;30:4765--4774.
+\item Ochoa D, Hercules A, Carmona M, \emph{et al.} Open Targets Platform: supporting systematic drug-target identification and prioritisation. \emph{Nucleic Acids Res} 2021;49:D1302--D1310.
+\item Lin Z, Akin H, Rao R, \emph{et al.} Evolutionary-scale prediction of atomic-level protein structure with a language model. \emph{Science} 2023;379:1123--1130.
+\item 1000 Genomes Project Consortium. A global reference for human genetic variation. \emph{Nature} 2015;526:68--74.
+\item Berman HM, Westbrook J, Feng Z, \emph{et al.} The Protein Data Bank. \emph{Nucleic Acids Res} 2000;28:235--242.
+\item Stefansson H, Helgason A, Thorleifsson G, \emph{et al.} A common inversion under selection in Europeans. \emph{Nat Genet} 2005;37:129--137.
+\item Mullin S, Smith L, Lee K, \emph{et al.} Ambroxol for the treatment of patients with Parkinson disease with and without glucocerebrosidase gene mutations: a nonrandomized, noncontrolled trial. \emph{JAMA Neurol} 2020;77:427--434.
+\end{enumerate}\par}
 
 \input{tables}
 
