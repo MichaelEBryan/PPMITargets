@@ -56,17 +56,13 @@ which classifiers trained separately in patients enrolled before 50 and at 60 or
 later produced variant rankings that shared almost nothing. We took that as
 evidence of distinct architectures and nominated \gene{LRRC37A2} and \gene{GALC}
 as targets. The work reported here began as an attempt to confirm that result
-using age at first motor symptom rather than age at enrolment. It does not
-confirm it, and the reasons are informative enough to report alongside the
-positive findings.
+using age at first motor symptom rather than age at enrolment. It does not, and we report why alongside the positive findings.
 
 \section*{Results}
 
 \subsection*{Age at onset falls on one continuum}
 
-The whole analysis is summarised in Fig.~1. The clinical distinction between early
-and late onset is usually drawn at a cut in age, but the
-genetic contribution to onset is graded rather than categorical. Among the 2,107 PPMI cases with a
+Fig.~1 summarises the analysis. Early and late onset are separated clinically at a cut in age. The genetic contribution to onset is continuous. Among the 2,107 PPMI cases with a
 recorded onset date, median onset was 37.0 years in carriers of a \gene{PRKN} or \gene{PINK1}
 variant (n = 23), 47.2 in \gene{SNCA} carriers (n = 41), 59.0 in \gene{GBA} carriers (n = 108),
 59.7 in \gene{LRRK2} carriers (n = 197) and 62.3 in the 1,738 cases recruited without a known
@@ -106,7 +102,7 @@ the level of individual variants the case-case comparison gives a global heterog
 of $\chi^2$ = 113.5 on 90 degrees of freedom ($P$ = 0.048), which is marginal and exploratory; no
 individual variant approaches the threshold for the panel (Supplementary Fig.~2b).
 
-The reason nothing resolves per variant is power. At n = 403 and minor allele frequency 0.30, the
+Nothing resolves at the level of individual variants because the sample is too small. At n = 403 and minor allele frequency 0.30, the
 smallest onset effect detectable with 80\% power at a Bonferroni threshold is 3.53 years per
 allele; the median true effect across the panel is 0.16. None of the 86 variants is detectable in
 this sample.
@@ -142,8 +138,7 @@ $t$ = 5.80, so a set at that level would have been detected; the strongest obser
 lipoprotein particle at 18 genes across 13 independent loci including \gene{APOE}, reaches
 $t$ = 5.18 with family-wise $P$ = 0.11 (Supplementary Fig.~10a). Every lysosomal and autophagy set
 sits at family-wise $P$ = 1.00. A naive gene-permutation null that ignores clustering placed the
-same lipoprotein set at a false-discovery rate of 0.001, which illustrates how much of an apparent
-pathway signal can come from one genomic neighbourhood.
+same lipoprotein set at a false-discovery rate of 0.001, so much of an apparent pathway signal can come from a single genomic neighbourhood.
 
 \subsection*{Prediction of onset age in individual patients}
 
@@ -152,58 +147,47 @@ nested cross-validation with hyperparameter search inside training folds, no mod
 the sample mean. Held-out $R^2$ was $-$0.029 for the mean, $-$0.042 for elastic net, $-$0.052 for
 gradient boosting and $-$0.443 for unregularised linear regression (Supplementary Fig.~10b). Gradient boosting
 outperformed linear regression only because the latter overfits 101 predictors on 403
-observations, which is a property of regularisation rather than of learning.
+observations, which reflects regularisation rather than anything the model has learned.
 
-Screening variant pairs for interaction found nothing. Restricting to variants above 5\% minor
+We also screened variant pairs for interaction. Restricting to variants above 5\% minor
 allele frequency and pairs with at least 30 carriers, which removes 219 pairs too sparse to fit
 stably, leaves 3,151 pairs; the maximum absolute $t$-statistic is 3.98 against a permutation null
 with mean 3.79 and 95th percentile 4.30 ($P$ = 0.24).
 
-Learning curves separate the two explanations. Held-out $R^2$ for the additive score rises
+The learning curves bear on whether this is a limit of sample size or of signal. Held-out $R^2$ for the additive score rises
 monotonically from $-$0.032 at n = 100 to +0.010 at n = 403, crossing zero near n = 220. Gradient
 boosting rises in parallel but from $-$0.171 to $-$0.098, and the gap does not close at any
-sample size tested. The additive model is limited by sample size; the nonlinear model is limited
-by the same thing and pays an additional penalty for flexibility it cannot use. The ceiling is
-the variance the score explains, 3.83\%, which no architecture can exceed.
+sample size tested. The additive model is limited by sample size. The nonlinear model is limited by the same thing and pays in addition for flexibility it cannot use. The upper bound is the variance the score itself explains, 3.83\%.
 
 \subsection*{Structural tractability of the implicated genes}
 
-Whether a gene can be drugged is a structural question before it is a genetic one, so we profiled
-every candidate against its AlphaFold model. A grid scan for buried cavities recovered the
+We profiled each candidate gene against its AlphaFold model. A grid scan for buried cavities recovered the
 annotated catalytic site as the largest pocket in \gene{GALC} (1,287~\AA$^3$, containing all six
 UniProt-annotated active and binding residues), \gene{GBA1} (1,050~\AA$^3$, both catalytic
-glutamates), \gene{GAK}, \gene{APOE} and \gene{LRRK2}, which indicates that the scan locates annotated sites rather than incidental surface depressions.
+glutamates), \gene{GAK}, \gene{APOE} and \gene{LRRK2}, so the scan is locating annotated sites.
 
-To score rather than describe those descriptors we ran the same pipeline on twenty control
-proteins, ten carrying an approved small-molecule drug and ten long-standing hard targets. Pocket
+We ran the same pipeline on twenty control proteins, ten carrying an approved small-molecule drug and ten long-standing hard targets. Pocket
 enclosure separated them at an area under the curve of 0.96, ahead of hydrophobicity of the lining
 (0.83), mean predicted confidence (0.84), fraction of disordered residues (0.79) and pocket volume
 (0.74). At the best cut, 0.705, nine of ten drugged and ten of ten undrugged controls are placed
 correctly.
 
-Applied to the candidates, the structural facts are specific. \gene{GALC} has a confidently
-predicted fold (mean confidence 94.6) and a well-formed catalytic pocket, is expressed in the
+\gene{GALC} has a confidently predicted fold (mean confidence 94.6) and a well-formed catalytic pocket, is expressed in the
 substantia nigra at 12.1 transcripts per million, and is tolerant of loss of function in healthy
 people (LOEUF 0.94); what it does not have is a single experimental structure in the Protein Data
-Bank, with or without a ligand. The obstacle is chemical rather than structural. \gene{LRRC37A2} has no
-fold to target: mean predicted confidence 42.3, with 77\% of residues below the threshold at which
-a predicted structure carries information, so the cavity the scan reports in it is an artefact of
-a disordered chain. \gene{SNCA} has no pocket above 50~\AA$^3$ at all, which is why the agents
+Bank, with or without a ligand. \gene{LRRC37A2} is predicted with low confidence throughout, at a mean of 42.3 and with 77\% of residues below the level at which a predicted structure carries information, so the cavity reported in it is an artefact of a disordered chain. \gene{SNCA} has no pocket above 50~\AA$^3$ at all, which is why the agents
 against it target the aggregate rather than the monomer (Fig.~4).
 
-The benchmark has a clear limit. Two candidates with dozens of ligand-bound structures, \gene{GBA1}
+The benchmark does not transfer to every protein class. Two candidates with dozens of ligand-bound structures, \gene{GBA1}
 and \gene{CTSB}, fall below the enclosure cut, because a glycosidase substrate channel is wide
-where a kinase or a carbonic anhydrase site is tight. Enclosure is therefore informative across
-protein classes and unreliable within the lysosomal hydrolases specifically, and the decisive
-practical fact for that class remains whether a ligand has ever been crystallised in the site.
+where a kinase or a carbonic anhydrase site is tight. Enclosure is informative across protein classes but unreliable within the lysosomal hydrolases, where the practical question remains whether a ligand has ever been crystallised in the site.
 
 \subsection*{Direction of effect at each locus}
 
-A target is only useful with a direction attached. For each candidate we took every significant
+For each candidate we took every significant
 brain expression signal for the gene, lifted it to the coordinates of the risk study, aligned the
 effect onto the risk-increasing allele, and kept the signals at the gene's own risk locus; each of
-the 13 brain regions then voted once, using the median of its own variants, so that a
-region contributing thousands of records cannot outvote the rest. That gives 39,694 aligned
+the 13 brain regions then voted once, using the median of its own variants, so that a region with many records does not dominate. That gives 39,694 aligned
 records.
 
 Seven genes have enough expression data at their own locus to give an effect, and six of those give a consistent direction (Fig.~3a). The risk allele lowers \gene{LRRC37A2} in all 13 regions and
@@ -214,20 +198,16 @@ five brain expression signals in high linkage disequilibrium with the disease le
 the gene. Of the six, an agent acting in the required direction exists for one, \gene{GPNMB}
 (Supplementary Fig.~3a,b).
 
-The direction matters more than it appears. \gene{GBA1} and \gene{GALC} are both lysosomal
+\gene{GBA1} and \gene{GALC} are both lysosomal
 hydrolases and both are lysosomal storage disease genes, but the genetics point opposite ways:
 loss of glucocerebrosidase raises risk, so ambroxol is given to raise it, whereas raised
 galactosylceramidase appears to raise risk, so the intervention would be inhibition. A programme
 that treated the lysosomal loci as one mechanism would get the sign wrong for one of them.
 
-The strength of an expression signal does not by itself identify the gene. At most
+A strong expression signal does not on its own identify which gene is affected. At most
 loci the lead variant controls one gene in brain, or none; at 17q21.31 it
 controls 28, because the variant marks a polymorphic inversion that moves as one
-block (Fig.~3c). The \gene{LRRC37A2} signal is therefore among the strongest we
-measured and also the least attributable, and the same lead variant raises
-\gene{MAPT} while lowering \gene{LRRC37A2}. Expression level gives further
-context: \gene{LRRC37A2} is expressed at 1.5 to 7 transcripts per million across
-brain, an order of magnitude below \gene{MAPT} in the same regions (Fig.~3b).
+block (Fig.~3c). The \gene{LRRC37A2} signal is among the strongest we measured and also the hardest to attribute; the same lead variant raises \gene{MAPT} while lowering \gene{LRRC37A2}. \gene{LRRC37A2} is also expressed at only 1.5 to 7 transcripts per million across brain, an order of magnitude below \gene{MAPT} in the same regions (Fig.~3b).
 
 \subsection*{Galactosylceramidase activity and disease risk}
 
@@ -248,16 +228,15 @@ a Mendelian randomisation estimate of 0.025 (s.e.\ 0.007, $P = 8\times10^{-4}$) 
 
 If the mechanism is that the risk haplotype raises \gene{GALC} expression, then in an independent
 tissue and an independent assay the same haplotype should raise \gene{GALC} transcript abundance.
-This prediction could have failed. Among GTEx brain expression quantitative trait loci for
+Among GTEx brain expression quantitative trait loci for
 \gene{GALC} in linkage disequilibrium with the risk variant at $r^2 > 0.6$, all five raise
 \gene{GALC} expression when aligned to the risk allele, with a maximum $r^2$ of 0.992 and a median
-aligned effect of +0.220 (Supplementary Fig.~3e). The two directions agree.
+aligned effect of +0.220 (Supplementary Fig.~3e).
 
-Two limitations apply. Colocalisation between the disease signal and the strongest cerebellar
+Two things qualify this. Colocalisation between the disease signal and the strongest cerebellar
 expression signal favours distinct causal variants (posterior probability 0.046 for one shared
 variant against 0.927 for an expression signal only), although the deposited disease statistics
-for this locus are substantially weaker than the published values and the comparison is
-underpowered rather than negative. And \gene{GALC} is under detectable genetic control in only 4 of
+for this locus are substantially weaker than the published values and the comparison is underpowered. And \gene{GALC} is under detectable genetic control in only 4 of
 13 GTEx brain tissues, dominated by cerebellum and cerebellar hemisphere, and absent from
 substantia nigra, putamen, caudate and cortex (Supplementary Fig.~20b).
 
@@ -272,8 +251,7 @@ Four measures were compared for separating pathogenic from tolerated variants. D
 catalytic pair E198 and E274, measured on the AlphaFold model of P54803, gives an area under the
 curve of 0.823 ($P$ = 0.002); change in mean pLDDT gives 0.780 ($P$ = 0.007); root-mean-square
 deviation between predicted mutant and wild-type structures gives 0.706 ($P$ = 0.046); and pLDDT at
-the residue itself gives 0.323 (Supplementary Fig.~11). Structure prediction is therefore informative for this
-protein, but through geometry rather than through comparison of predicted mutant structures.
+the residue itself gives 0.323 (Supplementary Fig.~11). Structure prediction is informative for this protein through geometry; comparing predicted mutant structures is not.
 
 None of these measures predicts the direction of an activity change, because each scores
 disruption, and disruption is a loss-of-function signal by construction. No coding variant that
@@ -290,8 +268,7 @@ them (Supplementary Fig.~12). Expression data does not separate them either: the
 expression quantitative trait locus for 25 genes across all 13 GTEx brain tissues, and the
 \gene{MAPT}-annotated variant for 28, almost the same set.
 
-The locus is not weak. It ranks fifth of the 86 panel loci for disease risk. It ranks 77th for
-onset. What fails is the gene assignment and the onset framing, not the locus.
+The locus ranks fifth of the 86 for disease risk and 77th for onset. What fails is the assignment of the signal to a gene, and the onset framing, rather than the locus itself.
 
 Ranking the fifteen candidate genes with a gene-based onset statistic separates them cleanly from
 the two the earlier analysis nominated. \gene{SNCA} is the only gene reaching genome-wide
@@ -413,9 +390,7 @@ never varied in sensitivity analysis.
 
 \section*{Discussion}
 
-Early and late onset in Parkinson's disease differ in how much inherited risk the patient carries,
-not in which mechanisms are at work. The evidence for that is consistent across every level at
-which it can be examined. Onset falls on one continuum from \gene{PRKN} and \gene{PINK1} carriers
+Early and late onset in Parkinson's disease differ in how much inherited risk the patient carries rather than in which mechanisms are at work, and the same pattern appears at every level we could examine. Onset falls on one continuum from \gene{PRKN} and \gene{PINK1} carriers
 through \gene{SNCA}, \gene{GBA} and \gene{LRRK2} to patients with no known variant, with no gap
 between the categories. Within the last of those groups, polygenic burden moves onset by 5.9 years
 between the extreme thirds. Across 86 loci the alleles that raise risk are the alleles that advance
@@ -423,12 +398,7 @@ onset, at $r$ = $-$0.72. And at the level where a mechanistic difference would h
 neither an individual variant nor any of 6,259 gene sets carries onset signal beyond its risk
 signal, in a test whose resolution was sufficient to have found one.
 
-For the clinic this changes what age at onset can be taken to mean. A patient diagnosed at 45 is
-not thereby a patient with a different illness, and should not be counselled as though the biology
-were different; what distinguishes them, on average, is that they carry more of the same risk. For
-trials it changes what stratification by onset age achieves. It enriches for burden, which is a
-legitimate design choice if burden is the modifier of interest, but it does not select for a
-distinct target, and a therapy that works in one group has no genetic reason to fail in the other.
+A patient diagnosed at 45 should not be counselled as having a biologically different illness; what distinguishes them, on average, is that they carry more of the same risk. Stratifying a trial by onset age enriches for burden, which is a reasonable design choice if burden is the modifier of interest, but it does not select for a distinct target, and a therapy that works in one group has no genetic reason to fail in the other.
 On the genetic evidence there is no case for two separate development programmes.
 
 Onset age is nonetheless not predictable for an individual. Held-out prediction from genetics was
@@ -436,7 +406,7 @@ no better than the group mean, and the learning curves show why: the additive si
 the nonlinear one is absent, so a larger cohort would not be expected to change this.
 Polygenic burden describes a group and should not be presented to a patient as a prognosis.
 
-Where the genetics does become actionable is direction. The direction of the required intervention is not a property of the pathway. \gene{GBA1} and \gene{GALC} are both
+The genetics is most useful in giving a direction, and that direction is not shared across a pathway. \gene{GBA1} and \gene{GALC} are both
 lysosomal hydrolases, both storage disease genes, and both sit in the lysosomal cluster a
 pathway-level reading would treat as one mechanism; but loss of glucocerebrosidase raises risk,
 which is why ambroxol is given to raise it, whereas raised galactosylceramidase appears to raise
@@ -444,29 +414,23 @@ risk, so the intervention would be inhibition. Reading the pathway rather than t
 of the two. Of the seventeen genes we assessed, six carry a directional call
 from brain expression and an agent acting the required way exists for one.
 
-Structural assessment distinguishes two reasons a target may be unavailable. \gene{GALC} has
+A target can be unavailable for either of two reasons. \gene{GALC} has
 a confidently predicted fold, a catalytic pocket the scan recovers with all six annotated site
 residues, expression in the substantia nigra and tolerance of loss of function in healthy people;
-what it lacks is any experimental structure at all. The obstacle is the absence of chemistry rather than the absence of a site. \gene{LRRC37A2} is 77\% disordered and has no fold to bind, and \gene{SNCA} has no pocket above 50~\AA$^3$, which is why the agents against it address
+what it lacks is any experimental structure at all, so the missing element is the chemistry and not the site. \gene{LRRC37A2} is 77\% disordered and has no fold to bind, and \gene{SNCA} has no pocket above 50~\AA$^3$, which is why the agents against it address
 the aggregate rather than the monomer.
 
-The \gene{GALC} result is the constructive counterpart. A hypothesis and the argument offered for it can be judged separately. Raised galactosylceramidase
-activity as a cause of Parkinson's disease survives an independent directional test that could
-have refuted it. What does not survive is a conformational mechanism asserted for a variant that
-changes no residue, and the confusion is instructive: the disease signal at this locus is entirely
-regulatory, so a structural method was the wrong instrument for a target that may well be real.
+A hypothesis and the argument offered for it can be judged separately, and \gene{GALC} is the clearest case of that here. Raised galactosylceramidase activity as a cause of Parkinson's disease survives an independent directional test that could have refuted it. What does not survive is a conformational mechanism asserted for a variant that changes no residue. The disease signal at this locus is entirely regulatory, so a structural method was not the right test for a target that may well be real.
 Applied to the geometry of the enzyme rather than to comparison of predicted mutant structures,
 the same tool is the best-performing of the four we compared.
 
-Onset-modifying targets should therefore be sought among the loci that carry onset signal, which
-are \gene{SNCA}, the chr4p16.3 lysosomal cluster comprising \gene{TMEM175}, \gene{GAK},
+Onset-modifying targets are better sought among the loci that carry onset signal, which are \gene{SNCA}, the chr4p16.3 lysosomal cluster comprising \gene{TMEM175}, \gene{GAK},
 \gene{DGKQ} and \gene{IDUA}, and \gene{APOE}, rather than among the outputs of a stratified
 ranking. A therapeutic hypothesis resting on a specific molecular mechanism also requires evidence
 at that resolution: a locus tagging a 620~kb inversion cannot nominate one of its genes, and a
 non-coding variant cannot support a claim about protein conformation.
 
-Our earlier analysis reached the opposite conclusion for reasons that generalise past this dataset.
-Feature importance is a property of a fitted model, not of the data-generating process, and its
+Our earlier analysis reached the opposite conclusion for reasons that are not specific to this dataset. Feature importance is a property of a fitted model, not of the data-generating process, and its
 rank is a high-variance functional of that model; comparing ranks between two models fitted to
 different samples inherits the variance of both, and nothing in the procedure propagates it. On
 data whose two groups are identical by construction, the comparison reports ``distinct'' in 42 to
@@ -475,8 +439,7 @@ data whose two groups are identical by construction, the comparison reports ``di
 testing it: distinct architecture is a claim about effect heterogeneity, and a heterogeneity test
 has a null distribution, an effect size and a confidence interval.
 
-The PPMI observations have a scope beyond the study that prompted them. PPMI is among the most
-heavily used cohorts in machine-learning studies of Parkinson's disease, and the enrolment flags
+These observations about PPMI apply beyond the study that prompted them. PPMI is among the most heavily used cohorts in machine-learning studies of Parkinson's disease, and the enrolment flags
 sit in the same standard table as the outcome label. Any supervised model trained on that table
 without excluding them is partly a model of recruitment. The same holds for measurement
 availability: in this cohort, which assays a participant has predicts diagnostic group better than
