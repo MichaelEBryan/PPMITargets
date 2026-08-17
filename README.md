@@ -88,6 +88,32 @@ brain: one or none at most loci, but 28 at 17q21.31, which is why the
 *LRRC37A2* signal cannot be attributed to *LRRC37A2* rather than to any of its
 neighbours on the same inversion haplotype.
 
+## What is not yet scripted
+
+The analysis grew over several sessions and some intermediate steps were run
+interactively rather than saved. Two of those have since been written up as
+scripts (`66_onset_groups.py` and `67_locus_gene_count.py`, both verified to
+reproduce the stored values exactly). The following files are still read by
+figure scripts but have no producing script here, so a clean rebuild from raw
+data will stop at them:
+
+| File | What it holds | Where it came from |
+|---|---|---|
+| `09_simulation_grid.csv` | simulation grid, flattened | derived from `09_simulation_grid.json` written by `04_modal_simulation.py` |
+| `81_method_grid.csv` | method comparison grid | derived from the JSON written by `20_modal_method.py` |
+| `19b_risk_vs_onset_aligned.csv` | 86 loci, risk and onset effects on a common allele | allele alignment step |
+| `85_target_annotation.csv` | per-gene onset statistic and tractability | join of `70_genestats_*` and `85_druggability.csv` |
+| `70_genestats_aao.csv` | gene-level onset statistics | `19_genewide_onset.py` writes `70_genestats_{tag}.csv`; the tag is set at the call site |
+| `120_galc_region_risk.csv`, `121_galc_eqtl_brain.csv` | GALC regional and eQTL extracts | extraction steps preceding `30_galc_activity.py` |
+| `131_galc_variants_geometry.csv`, `132_galc_method_comparison.csv` | ESMFold and AlphaFold variant geometry | assembled from the Modal output of `10_modal_galc_structure.py` |
+| `140_learning_curve.csv` | learning curves | run alongside `22_ml_value.py` |
+| `94b_interaction_nulls.json` | interaction permutation nulls | rerun of the interaction screen with the carrier filter |
+| `16_prs_negative_control.csv` | polygenic negative control | `05_corrected_analysis.py` variant |
+
+None of these affect the figures as published, which were generated from the
+files as they stand. They matter only for rebuilding from scratch, and each is
+a short step rather than a large computation.
+
 ## Main outputs
 
 | File | Contents |
